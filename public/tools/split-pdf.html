@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Split PDF Online | GhostConvert</title>
+  <meta
+    name="description"
+    content="Split a PDF into individual pages. Extract specific pages and save them as a new PDF."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://ghostconvert.dev/tools/split-pdf.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+
+  <!-- AdSense -->
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-K2ZE1S86ZM");
+  </script>
+
+  <!-- GhostConvert analytics wrapper -->
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Split PDF Online - GhostConvert" />
+  <meta
+    property="og:description"
+    content="Free online PDF splitter. Upload a PDF and split it into separate pages or sections."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/tools/split-pdf.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Split PDF Online - GhostConvert" />
+  <meta
+    name="twitter:description"
+    content="Extract pages from a PDF and save them as a new document in your browser."
+  />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Split PDF Online",
+    "url": "https://ghostconvert.dev/tools/split-pdf.html",
+    "description": "Free online tool to split PDF files into separate pages or sections.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "GhostConvert",
+      "url": "https://ghostconvert.dev/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- Optional JSON-LD FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does this tool change the content of my pages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Splitting only changes which pages are grouped together. The page content stays exactly the same as in the original PDF."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I split a large PDF?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. As long as the file uploads successfully and is within reasonable size limits, GhostConvert can process PDFs with many pages."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to my uploaded PDF after splitting?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Files are stored only long enough to create the split output and provide your download link, then deleted automatically after a short period as described in the Privacy Policy."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="tool-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <a href="/" class="logo">GHOST<span>CONVERT</span></a>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Split PDF</span>
+      </div>
+    </header>
+
+    <!-- Tool header -->
+    <section class="tool-header">
+      <h1 class="tool-title">Split PDF Files Online</h1>
+      <p class="tool-subtitle">
+        Upload a PDF and split it into individual pages. Perfect for extracting a few pages
+        from a report, removing extra pages, or saving just what you need.
+      </p>
+    </section>
+
+    <!-- Optional ad slot -->
+    <div class="ad-slot ad-slot-tool-top"></div>
+
+    <!-- Tool main card -->
+    <section class="tool-card-main">
+      <div id="upload-area" class="upload-area">
+        <div class="upload-text">
+          <strong>Drop a PDF file here</strong><br />
+          or click to browse from your device.
+        </div>
+        <div id="file-name" class="file-name"></div>
+        <input
+          id="file-input"
+          type="file"
+          accept=".pdf,application/pdf"
+          style="display:none"
+        />
+      </div>
+
+      <div class="tool-actions">
+        <button id="convert-btn" class="btn btn-primary">
+          Split PDF
+        </button>
+        <span id="status-text" class="status-text">
+          Select or drop a PDF to get started.
+        </span>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <!-- Optional lower ad slot -->
+      <div class="ad-slot ad-slot-tool-bottom"></div>
+    </section>
+
+    <!-- EXPLANATORY CONTENT -->
+    <section
+      class="content-section"
+      style="margin-top:28px;font-size:0.9rem;line-height:1.7;color:#9ca3af;"
+    >
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Why split a PDF?</h2>
+      <p style="margin:0 0 10px;">
+        Many PDFs include extra pages you do not need: blank backs, long appendices, or multiple
+        documents combined into one file. Splitting a PDF lets you pull out only the pages you care
+        about so you can email, upload, or store a smaller, cleaner document.
+      </p>
+      <p style="margin:0 0 8px;">
+        Common reasons to use a PDF splitter:
+      </p>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Extract a few pages from a long report or e-book.</li>
+        <li>Save just the signed pages from a contract.</li>
+        <li>Remove blank or irrelevant pages before uploading a form.</li>
+        <li>Break a large PDF into smaller parts so it fits upload limits.</li>
+      </ul>
+      <p style="margin:0;">
+        GhostConvert keeps the process simple: upload, split, and download the result as a clean PDF.
+      </p>
+    </section>
+
+    <section
+      class="content-section"
+      style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;"
+    >
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">How PDF splitting works</h2>
+      <ol style="padding-left:18px;margin:0 0 10px;">
+        <li>You upload a PDF from your computer or phone.</li>
+        <li>The file is processed and prepared for splitting.</li>
+        <li>The selected pages are written into a new PDF file.</li>
+        <li>You download a clean PDF containing only the pages you wanted.</li>
+      </ol>
+      <p style="margin:0 0 10px;">
+        The original PDF is not modified. A separate output file is generated that you can keep,
+        share, or upload wherever it is needed.
+      </p>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">Best uses for Split PDF</h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Submitting only selected pages to school or work portals.</li>
+        <li>Keeping a short summary section instead of a full report.</li>
+        <li>Separating multiple scans that were saved into one file.</li>
+        <li>Preparing different sections of a document for different recipients.</li>
+      </ul>
+    </section>
+
+    <section
+      class="content-section"
+      style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;"
+    >
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Frequently asked questions</h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Does this tool change the content of my pages?
+      </h3>
+      <p style="margin:0 0 8px;">
+        No. Splitting only rearranges which pages are stored together. The pages themselves
+        stay exactly the same as in the original PDF.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Can I split a large PDF?
+      </h3>
+      <p style="margin:0 0 8px;">
+        Yes. As long as the file uploads successfully and is within reasonable size limits,
+        GhostConvert can process large PDFs with many pages.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        What happens to my uploaded PDF?
+      </h3>
+      <p style="margin:0;">
+        Files are stored only long enough to create the split PDF and keep the download
+        available briefly. After a short period they are automatically deleted as described
+        in the <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        Files are processed securely and automatically deleted after a short period.
+        GhostConvert is a fast, no login toolset designed to stay simple and useful.
+      </div>
+      <div style="margin-top: 0.35rem;">
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;.&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;.&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      handleToolPage({
+        tool: "pdf:split-pdf"
+      });
+    });
+  </script>
+</body>
+</html>

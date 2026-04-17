@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Compress Images JPG PNG Online | GhostConvert</title>
+  <meta
+    name="description"
+    content="Free online JPG and PNG image compressor. Reduce image file size for web, email, and uploads while keeping quality sharp."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://ghostconvert.dev/tools/compress-image.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net">
+
+  <!-- AdSense -->
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-K2ZE1S86ZM");
+  </script>
+
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Compress Images JPG PNG Online - GhostConvert" />
+  <meta
+    property="og:description"
+    content="Free online JPG and PNG image compressor for fast file size reduction while keeping images clear."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/tools/compress-image.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Compress Images JPG PNG Online - GhostConvert" />
+  <meta
+    name="twitter:description"
+    content="Reduce JPG and PNG file sizes instantly for web, email, and uploads while keeping images sharp."
+  />
+
+  <!-- JSON-LD: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Compress Images JPG PNG",
+    "url": "https://ghostconvert.dev/tools/compress-image.html",
+    "description": "Free online JPG and PNG image compressor that reduces file size for web, email, and uploads while keeping images clear.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "GhostConvert",
+      "url": "https://ghostconvert.dev/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage for Compress Images tool -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Does this image compressor change my JPG or PNG dimensions?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The GhostConvert image compressor keeps the original width and height of your JPG or PNG. Only the compression level and metadata are adjusted to shrink file size, so your image still fits in the same layout."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will image quality be worse after compression?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The compressor is tuned to balance size and quality. Most users will not notice any difference in normal viewing. You may see minor changes if you zoom in heavily on very large JPGs, but the settings are designed for everyday web and email use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I compress multiple images at once?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This page focuses on single-file JPG and PNG compression for simplicity and reliability. You can run the tool several times in a row to compress multiple images, and batch compression may be added later based on demand."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are my uploaded images stored permanently?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Uploaded JPG and PNG files are stored only long enough to perform the compression and provide your download link. They are automatically deleted after a short period as described in the GhostConvert privacy policy."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <main class="tool-wrapper">
+
+    <!-- Header -->
+    <header class="header">
+      <a href="/" class="logo">GHOST<span>CONVERT</span></a>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Compress Images</span>
+      </div>
+    </header>
+
+    <!-- Tool Header -->
+    <section class="tool-header">
+      <h1 class="tool-title">Compress Images JPG PNG</h1>
+      <p class="tool-subtitle">
+        Reduce file sizes for faster uploads, smaller emails, and better web performance while keeping images clear.
+      </p>
+    </section>
+
+    <!-- Optional ad slot -->
+    <div class="ad-slot ad-slot-tool-top"></div>
+
+    <!-- Tool Main -->
+    <section class="tool-card-main">
+
+      <div id="upload-area" class="upload-area">
+        <div class="upload-text">
+          <strong>Drop a JPG or PNG file here</strong><br />
+          or click to choose one from your device.
+        </div>
+        <div id="file-name" class="file-name"></div>
+        <input
+          id="file-input"
+          type="file"
+          accept=".jpg,.jpeg,.png,image/jpeg,image/png"
+          style="display:none"
+        />
+      </div>
+
+      <div class="tool-actions">
+        <button id="convert-btn" class="btn btn-primary">Compress Image</button>
+        <span id="status-text" class="status-text">Select or drop an image to begin.</span>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <!-- Optional lower ad slot -->
+      <div class="ad-slot ad-slot-tool-bottom"></div>
+
+    </section>
+
+    <!-- EXPLANATORY CONTENT FOR THIS TOOL -->
+    <section
+      class="content-section"
+      style="margin-top:28px;font-size:0.9rem;line-height:1.7;color:#9ca3af;"
+    >
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        How this JPG / PNG compressor works
+      </h2>
+      <p style="margin:0 0 10px;">
+        This tool uses well known image utilities (such as ImageMagick) on the server side to reduce
+        the file size of your JPG and PNG images. When you upload a file, GhostConvert analyzes the
+        current format and then applies gentle compression tuned for normal web use.
+      </p>
+      <p style="margin:0 0 10px;">
+        JPG files are recompressed with a smart quality level that usually cuts file size by
+        25–70% without visible loss for most photos. PNG files are optimized by stripping
+        unnecessary metadata and using stronger lossless compression so graphics stay sharp.
+        The original aspect ratio and dimensions are preserved, so you can safely replace the
+        image on your website or in a document without breaking layouts.
+      </p>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">
+        When should you compress images?
+      </h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Before uploading product photos or blog images to your website.</li>
+        <li>When a JPG or PNG is too large to attach to an email or online form.</li>
+        <li>For social media posts where smaller files upload and process faster.</li>
+        <li>When you want to speed up page load times without fully redesigning a site.</li>
+        <li>Any time you are sending many images over a slow connection or limited data plan.</li>
+      </ul>
+      <p style="margin:0 0 10px;">
+        Compressing images regularly keeps storage under control and makes browsing feel faster
+        for your visitors or clients, especially on mobile devices.
+      </p>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">
+        Tips for best results
+      </h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Use JPG for photos and complex scenes with many colors and gradients.</li>
+        <li>Use PNG for interface elements, icons, logos, and graphics that need crisp edges.</li>
+        <li>If a file is already heavily compressed, running it again may only save a small amount.</li>
+        <li>Keep a copy of your original high quality image if you plan to edit it later.</li>
+      </ul>
+      <p style="margin:0;">
+        GhostConvert’s compressor is designed for everyday use and does not apply extreme
+        destructive settings by default. The goal is to keep images looking natural while
+        making them significantly lighter.
+      </p>
+    </section>
+
+    <section
+      class="content-section"
+      style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;"
+    >
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        Frequently asked questions
+      </h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Does this tool change my image dimensions?
+      </h3>
+      <p style="margin:0 0 8px;">
+        No. The compressor keeps the original width and height of your JPG or PNG.
+        Only the internal compression and metadata are adjusted to shrink file size.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Will the image quality be worse after compression?
+      </h3>
+      <p style="margin:0 0 8px;">
+        The tool aims for a balance between size and quality. Most users will not notice any
+        difference in normal viewing. If you zoom in heavily you may see minor changes on very
+        large JPGs, but this is usually acceptable for web and email use.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Can I compress multiple images at once?
+      </h3>
+      <p style="margin:0 0 8px;">
+        This page is focused on single file compression for simplicity and reliability.
+        For now you can run the tool several times in a row. Batch tools may be added later
+        based on demand.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Are my uploaded images stored permanently?
+      </h3>
+      <p style="margin:0;">
+        No. Files are stored only long enough to perform the compression and make the download
+        available. They are automatically cleaned up after a short period, as described in the
+        <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        Files are processed securely and deleted automatically after a short period.
+        GhostConvert is a lightweight, fast, no login toolset for real users.
+      </div>
+      <div style="margin-top: 0.35rem;">
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;.&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;.&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      handleToolPage({
+        tool: "image:compress-image"
+      });
+    });
+  </script>
+</body>
+</html>

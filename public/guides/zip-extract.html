@@ -1,0 +1,258 @@
+<!-- /guides/zip-extract.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ZIP Extractor Guide | GhostConvert</title>
+  <meta
+    name="description"
+    content="ZIP Extractor guide from GhostConvert. Learn what ZIP files are, how extraction works, how to handle large archives, and common issues like password-protected ZIPs."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://ghostconvert.dev/guides/zip-extract.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+
+  <!-- Google AdSense (optional on guides; keep if you want consistency) -->
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-K2ZE1S86ZM");
+  </script>
+
+  <!-- GhostConvert Analytics Script -->
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ZIP Extractor Guide | GhostConvert" />
+  <meta
+    property="og:description"
+    content="Step-by-step ZIP extraction guide: unpack archives, handle large ZIPs, and troubleshoot common issues."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/guides/zip-extract.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="ZIP Extractor Guide | GhostConvert" />
+  <meta
+    name="twitter:description"
+    content="Unpack ZIP archives in your browser and download the extracted files. Tips for large and password-protected ZIPs."
+  />
+
+  <!-- JSON-LD: HowTo -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "How to Extract a ZIP File Online",
+    "description": "A step-by-step guide to extract .zip archives using GhostConvert.",
+    "url": "https://ghostconvert.dev/guides/zip-extract.html",
+    "inLanguage": "en",
+    "tool": [{"@type":"HowToTool","name":"GhostConvert ZIP Extractor"}],
+    "step": [
+      {"@type":"HowToStep","name":"Open the tool","text":"Open the GhostConvert ZIP Extractor tool."},
+      {"@type":"HowToStep","name":"Upload the ZIP","text":"Drop a .zip archive into the upload area or click to browse."},
+      {"@type":"HowToStep","name":"Extract and download","text":"Click Extract ZIP, then download the extracted contents."}
+    ]
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does a ZIP extractor do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A ZIP extractor unpacks a .zip archive into normal files and folders so you can use them like any other download."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I extract large ZIP files?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but very large ZIP archives can be limited by browser memory and upload speed. If a ZIP is huge, splitting it into smaller parts may help."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you keep my ZIP files?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Files are processed for extraction and deleted automatically after a short period as described in the Privacy Policy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What about password-protected ZIP archives?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Password-protected ZIPs may not extract unless decryption is supported. If your ZIP is encrypted, a desktop tool that can prompt for the password may be required."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <main class="tool-wrapper">
+    <header class="header">
+      <a href="/" class="logo">GHOST<span>CONVERT</span></a>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Guide</span>
+      </div>
+    </header>
+
+    <section class="tool-header">
+      <h1 class="tool-title">ZIP Extractor Guide</h1>
+      <p class="tool-subtitle">
+        ZIP files bundle many files into one download. This guide shows how to unpack them quickly,
+        what to expect from folders, and how to handle big or protected archives.
+      </p>
+    </section>
+
+    <!-- Optional ad slot -->
+    <div class="ad-slot ad-slot-tool-top"></div>
+
+    <section class="content-section" style="margin-top:18px;">
+      <div style="color:#9ca3af;font-size:0.95rem;line-height:1.7;">
+        <p style="margin:0 0 10px;">
+          A <code>.zip</code> is just a container: it can hold folders, photos, documents, project files, and more.
+          Extracting a ZIP means turning that container back into normal files you can open and edit.
+        </p>
+        <p style="margin:0;">
+          Ready to extract? <a href="/tools/zip-extract.html">Open the ZIP Extractor tool</a>.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section" style="margin-top:18px;font-size:0.95rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">What you’ll get after extraction</h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>The same folder structure found inside the ZIP (subfolders included)</li>
+        <li>All original filenames (unless the ZIP itself contains duplicates)</li>
+        <li>Files ready to open like normal downloads (PDFs, images, code, etc.)</li>
+      </ul>
+      <p style="margin:0;">
+        Extraction does not “convert” your files — it only unpacks them.
+      </p>
+    </section>
+
+    <section class="content-section" style="margin-top:18px;font-size:0.95rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">How to extract a ZIP on GhostConvert</h2>
+      <ol style="padding-left:18px;margin:0 0 10px;">
+        <li>Go to <a href="/tools/zip-extract.html">ZIP Extractor</a>.</li>
+        <li>Drop your <strong>.zip</strong> file into the upload area (or click to browse).</li>
+        <li>Click <strong>Extract ZIP</strong>.</li>
+        <li>Download the extracted contents when processing finishes.</li>
+      </ol>
+      <p style="margin:0;">
+        Your original ZIP archive isn’t modified — GhostConvert produces an extracted output you can keep.
+      </p>
+    </section>
+
+    <section class="content-section" style="margin-top:18px;font-size:0.95rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Tips for large ZIP files</h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li><strong style="color:#e5e7eb;">Upload speed matters:</strong> big ZIPs take longer mainly due to upload time.</li>
+        <li><strong style="color:#e5e7eb;">Browser memory limits:</strong> extremely large archives can be heavy in the browser.</li>
+        <li><strong style="color:#e5e7eb;">Split if needed:</strong> if a ZIP is huge, splitting it into parts often helps.</li>
+        <li><strong style="color:#e5e7eb;">Remove junk:</strong> if you can, remove unnecessary files before zipping (cache folders, videos, etc.).</li>
+      </ul>
+    </section>
+
+    <section class="content-section" style="margin-top:18px;font-size:0.95rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Common issues and fixes</h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li><strong style="color:#e5e7eb;">Password-protected ZIP:</strong> encrypted ZIPs may require a desktop extractor that prompts for a password.</li>
+        <li><strong style="color:#e5e7eb;">ZIP is corrupted:</strong> re-download the file, or ask the sender to re-create the ZIP.</li>
+        <li><strong style="color:#e5e7eb;">Missing files:</strong> check if the ZIP actually contains them (some ZIPs include only shortcuts or partial exports).</li>
+        <li><strong style="color:#e5e7eb;">Weird folder nesting:</strong> some ZIPs include a top-level folder inside another folder; that’s normal depending on who created it.</li>
+      </ul>
+      <p style="margin:0;">
+        If you’re extracting a project ZIP, look for a top-level <code>README</code> or <code>index</code> file after extraction.
+      </p>
+    </section>
+
+    <section class="content-section" style="margin-top:18px;font-size:0.95rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Frequently asked questions</h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Do you keep my ZIP files?</h3>
+      <p style="margin:0 0 8px;">
+        No. Files are processed for extraction and deleted automatically after a short period as described in the
+        <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Can I extract really big ZIPs?</h3>
+      <p style="margin:0 0 8px;">
+        Usually, yes but the biggest limits are upload speed and browser resources. If extraction fails, try splitting
+        the archive into smaller ZIPs.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">What about password-protected ZIP archives?</h3>
+      <p style="margin:0;">
+        If your ZIP is encrypted, extraction may not work unless decryption is supported. In that case, use a desktop tool
+        that can prompt you for the password, then (optionally) re-zip and extract again.
+      </p>
+    </section>
+
+    <!-- Optional ad slot -->
+    <div class="ad-slot ad-slot-tool-bottom" style="margin-top:18px;"></div>
+
+    <footer class="footer">
+      <div>
+        Files are processed securely and automatically deleted after a short period.
+        GhostConvert is a fast, no login toolset designed to stay simple and useful.
+      </div>
+      <div style="margin-top:0.35rem;">
+        <a href="/">Home</a>
+        &nbsp;.&nbsp;
+        <a href="/guides/index.html">Guides</a>
+        &nbsp;.&nbsp;
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;.&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;.&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const analytics = window.GCAnalytics || null;
+
+      const track = (href) => {
+        if (!analytics || typeof analytics.guideLinkClick !== "function") return;
+        try { analytics.guideLinkClick(href, "guides:zip-extract"); } catch (e) {}
+      };
+
+      document.querySelectorAll('a[href^="/tools/"]').forEach((link) => {
+        link.addEventListener("click", () => track(link.getAttribute("href")));
+      });
+    });
+  </script>
+</body>
+</html>

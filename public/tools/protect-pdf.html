@@ -1,0 +1,262 @@
+<!-- /tools/protect-pdf.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Protect PDF with Password | GhostConvert</title>
+  <meta
+    name="description"
+    content="Protect a PDF with a password online for free. Encrypt PDFs you own to help prevent unauthorized viewing. No signup, no watermarks."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://ghostconvert.dev/tools/protect-pdf.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623"
+     crossorigin="anonymous"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Protect PDF with Password - GhostConvert" />
+  <meta
+    property="og:description"
+    content="Free online PDF password tool. Encrypt a PDF with a password for safer sharing. No signup, no watermarks."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/tools/protect-pdf.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Protect PDF with Password - GhostConvert" />
+  <meta
+    name="twitter:description"
+    content="Add a password to a PDF in seconds. Encrypt PDFs you own for safer sharing. Free, fast, no login."
+  />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-K2ZE1S86ZM");
+  </script>
+
+  <!-- GhostConvert Analytics Script -->
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- JSON-LD: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Protect PDF with Password",
+    "url": "https://ghostconvert.dev/tools/protect-pdf.html",
+    "description": "Free online PDF password protection tool for encrypting PDFs you own with a password for safer sharing.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "GhostConvert",
+      "url": "https://ghostconvert.dev/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage for Protect PDF tool -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does it mean to password-protect a PDF?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Password-protecting a PDF means encrypting the document so that viewers must enter a password to open it. This helps prevent unauthorized access when sharing sensitive PDFs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does a protected PDF stop people from copying or printing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A password can be used to restrict opening a PDF. Some protection modes can also apply printing or copying restrictions. Exact behavior depends on how the PDF is encrypted and what permissions are set."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can GhostConvert recover my password if I forget it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. If you encrypt a PDF with a password, you must keep that password safe. Without it, the protected PDF may not be recoverable."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Protect PDF on GhostConvert free and do I need an account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Protect PDF on GhostConvert is free for everyday use and does not require an account. Upload a PDF, add a password, and download the protected file with no login and no watermark."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long are my PDF files stored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Files are stored only long enough to apply password protection and provide your download link briefly. They are automatically deleted afterward as described in the Privacy Policy."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="tool-wrapper">
+
+    <header class="header">
+      <a href="/" class="logo">
+        GHOST<span>CONVERT</span>
+      </a>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Protect PDF</span>
+      </div>
+    </header>
+
+    <section class="tool-header">
+      <h1 class="tool-title">Protect PDF with Password</h1>
+      <p class="tool-subtitle">
+        Add a password to PDFs you own for safer sharing. Encrypt a document and download a protected copy in seconds.
+      </p>
+    </section>
+
+    <!-- Optional ad slot -->
+    <div class="ad-slot ad-slot-tool-top"></div>
+
+    <section class="tool-card-main">
+      <div id="upload-area" class="upload-area">
+        <div class="upload-text">
+          <strong>Drop a PDF file here</strong><br />
+          or click to browse from your device.
+        </div>
+        <div id="file-name" class="file-name"></div>
+        <input id="file-input" type="file" accept=".pdf,application/pdf" style="display:none" />
+      </div>
+
+      <div class="tool-actions">
+        <button id="convert-btn" class="btn btn-primary">
+          Protect PDF
+        </button>
+        <span id="status-text" class="status-text">Select or drop a PDF to begin.</span>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <!-- Optional lower ad slot -->
+      <div class="ad-slot ad-slot-tool-bottom"></div>
+    </section>
+
+    <!-- EXPLANATORY CONTENT -->
+    <section class="content-section" style="margin-top:28px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Why protect a PDF with a password?</h2>
+      <p style="margin:0 0 10px;">
+        PDFs often contain private information contracts, invoices, tax documents, medical forms, or internal reports.
+        Password protection adds a layer of security by requiring a password before someone can open the file.
+      </p>
+      <p style="margin:0 0 10px;">
+        Protecting a PDF with GhostConvert is useful when you:
+      </p>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Email a PDF that includes personal or business information.</li>
+        <li>Share documents with clients and want basic access control.</li>
+        <li>Upload a PDF to a shared drive and reduce accidental access.</li>
+        <li>Store sensitive paperwork in a safer, encrypted format.</li>
+      </ul>
+      <p style="margin:0;">
+        Use this tool only for PDFs you own or have permission to encrypt and share.
+      </p>
+    </section>
+
+    <section class="content-section" style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">How PDF password protection works</h2>
+      <ol style="padding-left:18px;margin:0 0 10px;">
+        <li>Upload a PDF from your computer, phone, or tablet.</li>
+        <li>Enter a password you want to require for opening the PDF.</li>
+        <li>GhostConvert encrypts the document and generates a protected copy.</li>
+        <li>Download the encrypted PDF and share it securely.</li>
+      </ol>
+      <p style="margin:0 0 10px;">
+        Important: keep your password safe. If you forget it, the encrypted PDF may not be recoverable.
+      </p>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">Tips for best results</h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Use a strong password with a mix of letters, numbers, and symbols.</li>
+        <li>Send the password separately from the file (for example, via text instead of email).</li>
+        <li>If you only need printing/copying restrictions (not a password), use Unlock PDF for owner restrictions workflows.</li>
+      </ul>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">Frequently asked questions</h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Does this encrypt the PDF or just lock it?</h3>
+      <p style="margin:0 0 8px;">
+        Password protection typically encrypts the PDF so that the content cannot be opened without the password.
+        The exact encryption details depend on the PDF settings used during processing.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Can GhostConvert remove the password later?</h3>
+      <p style="margin:0 0 8px;">
+        If you know the password, you can create an unlocked copy in your own workflow.
+        If you forget the password, GhostConvert cannot recover it.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">How long are my files stored?</h3>
+      <p style="margin:0;">
+        Files are kept only long enough to apply protection and provide your download link briefly.
+        They are deleted automatically after a short period as described in the
+        <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>
+        Files are processed securely and deleted automatically after a short period.
+        GhostConvert is a fast, no login toolset designed to stay simple and useful.
+      </div>
+      <div style="margin-top: 0.35rem;">
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;.&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;.&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      handleToolPage({
+        tool: "pdf:protect-pdf"
+      });
+    });
+  </script>
+</body>
+</html>

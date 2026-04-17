@@ -1,0 +1,195 @@
+<!-- /var/www/file-converter/public/tools/png-to-webp.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PNG to WEBP Converter | GhostConvert</title>
+  <meta name="description" content="Convert PNG images to WEBP online. Get smaller, modern images ideal for web and apps." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://ghostconvert.dev/tools/png-to-webp.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net">
+
+  <!-- AdSense script is fine to keep; do NOT render ad units until approved -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623" crossorigin="anonymous"></script>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-K2ZE1S86ZM');
+  </script>
+
+  <script src="/assets/analytics.js" defer></script>
+
+  <meta property="og:title" content="PNG to WEBP Converter · GhostConvert" />
+  <meta property="og:description" content="Free PNG to WEBP converter for smaller, modern images that load fast on the web." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/tools/png-to-webp.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PNG to WEBP Converter · GhostConvert" />
+  <meta name="twitter:description" content="Turn PNG images into modern WEBP files for faster loading and smaller file sizes." />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PNG to WEBP Converter",
+    "url": "https://ghostconvert.dev/tools/png-to-webp.html",
+    "description": "Convert PNG images to WEBP format online for smaller, modern web graphics.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "isPartOf": { "@type": "WebSite", "name": "GhostConvert", "url": "https://ghostconvert.dev/" },
+    "inLanguage": "en"
+  }
+  </script>
+</head>
+
+<body>
+  <main class="tool-wrapper">
+    <header class="header">
+      <a href="/" class="logo">GHOST<span>CONVERT</span></a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/about.html">About</a>
+        <a href="/how-it-works.html">How it works</a>
+        <a href="/guides/index.html">Guides</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>PNG to WEBP</span>
+      </div>
+    </header>
+
+    <section class="tool-header">
+      <h1 class="tool-title">PNG to WEBP Converter</h1>
+      <p class="tool-subtitle">
+        Turn PNG images into efficient WEBP files for faster loading and smaller file sizes on the web.
+      </p>
+      <p style="margin:10px 0 0;color:#9ca3af;font-size:0.85rem;line-height:1.6;">
+        New here? Read <a href="/how-it-works.html">How it works</a> or the
+        <a href="/guides/png-to-webp.html">PNG → WEBP guide</a>.
+      </p>
+    </section>
+
+    <section class="tool-card-main">
+      <div id="upload-area" class="upload-area">
+        <div class="upload-text">
+          <strong>Drop a PNG file here</strong><br />
+          or click to browse from your device.
+        </div>
+        <div id="file-name" class="file-name"></div>
+        <input id="file-input" type="file" accept=".png,image/png" style="display:none" />
+      </div>
+
+      <div class="tool-actions">
+        <button id="convert-btn" class="btn btn-primary">Convert to WEBP</button>
+        <span id="status-text" class="status-text">Select or drop a PNG to get started.</span>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+    </section>
+
+    <section class="content-section" style="margin-top:28px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Why convert PNG to WEBP?</h2>
+      <p style="margin:0 0 10px;">
+        WEBP is a modern image format that often delivers smaller file sizes than PNG while keeping images sharp.
+        Converting PNG to WEBP helps pages load faster, improves Core Web Vitals, and saves bandwidth.
+      </p>
+      <ul style="padding-left:18px;margin:0;">
+        <li>Reduce image size without a big quality hit</li>
+        <li>Speed up landing pages, blogs, and shops</li>
+        <li>Optimize assets for modern browsers</li>
+        <li>Keep transparency (alpha) when needed</li>
+      </ul>
+    </section>
+
+    <section class="content-section" style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">How PNG → WEBP conversion works</h2>
+      <ol style="padding-left:18px;margin:0 0 10px;">
+        <li>You upload a PNG file from your device.</li>
+        <li>GhostConvert encodes it into WEBP using web-focused compression.</li>
+        <li>You download a smaller WEBP file ready for websites and apps.</li>
+      </ol>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">Best uses for WEBP images</h2>
+      <ul style="padding-left:18px;margin:0;">
+        <li>Hero images and banners</li>
+        <li>Product photos and listings</li>
+        <li>Blog covers and article images</li>
+        <li>Thumbnails and preview grids</li>
+      </ul>
+    </section>
+
+    <!-- NEW: internal linking block (kills “thin page” signals across all tools) -->
+    <section class="content-section" style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Related</h2>
+      <ul style="padding-left:18px;margin:0 0 10px;">
+        <li><strong>Guide:</strong> <a href="/guides/png-to-webp.html">PNG → WEBP tips</a></li>
+        <li><strong>Other image tools:</strong> <a href="/tools/jpg-to-webp.html">JPG → WEBP</a>, <a href="/tools/webp-to-png.html">WEBP → PNG</a>, <a href="/tools/webp-to-jpg.html">WEBP → JPG</a>, <a href="/tools/compress-image.html">Compress Image</a></li>
+      </ul>
+      <p style="margin:0;">
+        Want the full list? Browse <a href="/#tools">all tools</a> or <a href="/guides/index.html">all guides</a>.
+      </p>
+    </section>
+
+    <section class="content-section" style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Frequently asked questions</h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Does WEBP support transparency like PNG?</h3>
+      <p style="margin:0 0 8px;">
+        Yes. WEBP supports transparency (alpha channel), so you can keep transparent backgrounds while reducing file size.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Will WEBP work in all browsers?</h3>
+      <p style="margin:0 0 8px;">
+        Modern browsers support WEBP. If you need compatibility with older browsers, provide a PNG/JPG fallback.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Do you keep or log my images?</h3>
+      <p style="margin:0;">
+        Files are processed for conversion and then automatically deleted after a short period, as outlined in the
+        <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>
+        Files are processed securely and automatically deleted after a short period.
+      </div>
+      <div style="margin-top: 0.35rem;">
+        <a href="/about.html">About</a>
+        &nbsp;·&nbsp;
+        <a href="/how-it-works.html">How it works</a>
+        &nbsp;·&nbsp;
+        <a href="/guides/index.html">Guides</a>
+        &nbsp;·&nbsp;
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;·&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;·&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      handleToolPage({ tool: "image:png-to-webp" });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "file-converter",
+  "version": "1.0.0",
+  "description": "Starter file conversion website with queue-based backend",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development node src/server.js",
+    "start": "NODE_ENV=production node src/server.js",
+    "worker": "NODE_ENV=production node src/workers/convertWorker.js"
+  },
+  "dependencies": {
+    "bullmq": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "express": "^4.19.2",
+    "ioredis": "^5.4.1",
+    "mime-types": "^2.1.35",
+    "morgan": "^1.10.0",
+    "multer": "^2.0.2",
+    "uuid": "^9.0.1"
+  }
+}

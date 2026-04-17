@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WEBP to PNG Converter | GhostConvert</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Convert WEBP images to PNG online with GhostConvert. Free WEBP to PNG converter for logos, graphics, and transparency."
+  />
+  <link rel="canonical" href="https://ghostconvert.dev/tools/webp-to-png.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+
+  <!-- Google AdSense -->
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-K2ZE1S86ZM");
+  </script>
+
+  <!-- GhostConvert Analytics Script -->
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="WEBP to PNG Converter - GhostConvert" />
+  <meta
+    property="og:description"
+    content="Make WEBP images compatible everywhere by converting them to PNG. Keep transparency for logos and graphics."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/tools/webp-to-png.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WEBP to PNG Converter - GhostConvert" />
+  <meta
+    name="twitter:description"
+    content="Free online WEBP to PNG converter. Preserve transparency for logos, icons, and UI graphics."
+  />
+
+  <!-- JSON-LD: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "WEBP to PNG Converter",
+    "url": "https://ghostconvert.dev/tools/webp-to-png.html",
+    "description": "Convert WEBP images to PNG online for compatibility and transparency support.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "GhostConvert",
+      "url": "https://ghostconvert.dev/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why convert WEBP to PNG?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Convert WEBP to PNG when you need better compatibility with older apps, editors, and CMS platforms, or when you want a widely supported format for logos and UI graphics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will PNG keep transparency from my WEBP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. PNG supports transparency, so transparent areas in your WEBP can be preserved in the PNG output."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is PNG always smaller than WEBP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Not usually. WEBP is often more space-efficient than PNG. The main benefit of PNG is compatibility and lossless output for graphics."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you store my images after conversion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Files are processed for conversion and automatically deleted after a short period as described in the Privacy Policy."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="tool-wrapper">
+    <header class="header">
+      <a href="/" class="logo">
+        GHOST<span>CONVERT</span>
+      </a>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>WEBP to PNG</span>
+      </div>
+    </header>
+
+    <section class="tool-header">
+      <h1 class="tool-title">WEBP to PNG Converter</h1>
+      <p class="tool-subtitle">
+        Convert WEBP images into PNG for better compatibility while keeping transparency for logos, icons, and UI graphics.
+      </p>
+    </section>
+
+    <!-- Optional ad slot -->
+    <div class="ad-slot ad-slot-tool-top"></div>
+
+    <section class="tool-card-main">
+      <div id="upload-area" class="upload-area">
+        <div class="upload-text">
+          <strong>Drop a WEBP file here</strong><br />
+          or click to browse from your device.
+        </div>
+        <div id="file-name" class="file-name"></div>
+        <input
+          id="file-input"
+          type="file"
+          accept=".webp,image/webp"
+          style="display:none"
+        />
+      </div>
+
+      <div class="tool-actions">
+        <button id="convert-btn" class="btn btn-primary">
+          Convert to PNG
+        </button>
+        <span id="status-text" class="status-text">
+          Select or drop a WEBP file to get started.
+        </span>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <!-- Optional lower ad slot -->
+      <div class="ad-slot ad-slot-tool-bottom"></div>
+    </section>
+
+    <!-- EXPLANATORY SEO CONTENT -->
+    <section class="content-section" style="margin-top:28px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Why convert WEBP to PNG?</h2>
+      <p style="margin:0 0 10px;">
+        WEBP is a modern format, but some editors and platforms still don’t fully support it.
+        PNG is widely compatible and keeps sharp edges and transparency, which is perfect for logos,
+        icons, and UI graphics.
+      </p>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Use WEBP images in apps that do not support WEBP yet</li>
+        <li>Keep transparent backgrounds for logos and UI assets</li>
+        <li>Prepare images for older CMS platforms or design tools</li>
+        <li>Export a universal file format for sharing and editing</li>
+      </ul>
+    </section>
+
+    <section class="content-section" style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">How WEBP → PNG conversion works</h2>
+      <ol style="padding-left:18px;margin:0 0 10px;">
+        <li>Upload a WEBP image from your device.</li>
+        <li>GhostConvert decodes the WEBP image and preserves transparency if present.</li>
+        <li>The image is encoded as PNG (lossless) for broad compatibility.</li>
+        <li>You download a PNG that works in nearly any editor or platform.</li>
+      </ol>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">Frequently asked questions</h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Will PNG keep transparency?</h3>
+      <p style="margin:0 0 8px;">
+        Yes. If your WEBP includes transparency, the exported PNG will preserve it.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Will the PNG be larger than the WEBP?</h3>
+      <p style="margin:0 0 8px;">
+        Often, yes. WEBP is typically more space efficient. PNG is used here for compatibility and lossless output.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">How long are my files stored?</h3>
+      <p style="margin:0;">
+        Files are kept only long enough to complete the conversion and provide your download link,
+        then deleted automatically as described in the <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>
+        Files are processed securely and automatically deleted after a short period.
+        GhostConvert is a fast, no login toolset designed to stay simple and useful.
+      </div>
+      <div style="margin-top: 0.35rem;">
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;.&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;.&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      handleToolPage({
+        tool: "image:webp-to-png"
+      });
+    });
+  </script>
+</body>
+</html>

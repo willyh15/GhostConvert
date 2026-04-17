@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    container_name: ghostconvert-app
+    restart: unless-stopped
+    env_file:
+      - .env.docker
+    depends_on:
+      - redis
+    ports:
+      # host:container  -> app inside container listens on 3000; externally you'll hit 4000
+      - "127.0.0.1:4000:3000"
+    volumes:
+      # keep tmp files on the host so they survive container restarts
+      - ./tmp:/usr/src/app/tmp
+
+  redis:
+    image: redis:7-alpine
+    container_name: ghostconvert-redis
+    restart: unless-stopped
+    volumes:
+      - redis-data:/data
+
+volumes:
+  redis-data:

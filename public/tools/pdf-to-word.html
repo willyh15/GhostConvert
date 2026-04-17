@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PDF to Word (DOCX) Converter | GhostConvert</title>
+  <meta
+    name="description"
+    content="Convert PDF to Word (DOCX) online with GhostConvert. Fast, clean PDF to editable Word documents with no watermarks, no login, and no software to install."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://ghostconvert.dev/tools/pdf-to-word.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623"
+    crossorigin="anonymous"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PDF to Word (DOCX) Converter - GhostConvert" />
+  <meta
+    property="og:description"
+    content="Free online PDF to Word converter. Turn PDFs into editable Word (DOCX) documents in seconds with no watermarks and no registration."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/tools/pdf-to-word.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PDF to Word (DOCX) Converter - GhostConvert" />
+  <meta
+    name="twitter:description"
+    content="Convert PDF to Word (DOCX) online. Simple PDF to DOCX tool with no login, no watermarks, and fast downloads."
+  />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-K2ZE1S86ZM");
+  </script>
+
+  <!-- GhostConvert Analytics -->
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- JSON-LD: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PDF to Word (DOCX) Converter",
+    "url": "https://ghostconvert.dev/tools/pdf-to-word.html",
+    "description": "Convert PDF to Word (DOCX) online for free with GhostConvert. Create clean, editable Word documents from your PDF files with no watermarks.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "GhostConvert",
+      "url": "https://ghostconvert.dev/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Will the layout be perfect after converting PDF to Word?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Text-heavy PDFs usually convert very well. Complex layouts (multi-column designs, dense tables, unusual fonts, or lots of graphics) may need light cleanup in Word or Google Docs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does this work for scanned PDFs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Scanned PDFs can convert, but results depend on the scan quality and text clarity. Cleaner scans produce better editable output."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do converted DOCX files have watermarks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. GhostConvert creates clean DOCX output without adding watermarks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long are my files stored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Files are stored only long enough to complete the conversion and provide your download link, then deleted automatically after a short period as described in the Privacy Policy."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <main class="tool-wrapper">
+
+    <header class="header">
+      <a href="/" class="logo">
+        GHOST<span>CONVERT</span>
+      </a>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>PDF to Word</span>
+      </div>
+    </header>
+
+    <section class="tool-header">
+      <h1 class="tool-title">PDF to Word (DOCX) converter</h1>
+      <p class="tool-subtitle">
+        Turn your PDF into an editable Word document in a few seconds.
+        No watermarks, no registration, and no extra software to install.
+      </p>
+    </section>
+
+    <!-- Optional ad slot -->
+    <div class="ad-slot ad-slot-tool-top"></div>
+
+    <section class="tool-card-main">
+      <div id="upload-area" class="upload-area">
+        <div class="upload-text">
+          <strong>Drop a PDF file here</strong><br />
+          or click to browse from your device.
+        </div>
+        <div id="file-name" class="file-name"></div>
+        <input
+          id="file-input"
+          type="file"
+          accept=".pdf,application/pdf"
+          style="display:none"
+        />
+      </div>
+
+      <div class="tool-actions">
+        <button id="convert-btn" class="btn btn-primary">
+          Convert PDF to DOCX
+        </button>
+        <span id="status-text" class="status-text">
+          Select or drop a PDF file to begin.
+        </span>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <!-- Optional lower ad slot -->
+      <div class="ad-slot ad-slot-tool-bottom"></div>
+    </section>
+
+    <!-- EXPLANATORY CONTENT -->
+    <section class="content-section" style="margin-top:28px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Free online PDF to Word converter</h2>
+      <p style="margin:0 0 10px;">
+        This tool converts your PDF into a clean, editable Word (DOCX) document
+        that you can open in Microsoft Word, Google Docs, or other editors.
+        It is designed for everyday documents, homework, invoices, e-books, and forms.
+      </p>
+      <p style="margin:0 0 10px;">
+        GhostConvert keeps layouts as stable as possible while giving you a document
+        you can edit, copy text from, and reformat however you like.
+      </p>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Edit old PDFs without re-typing the entire document.</li>
+        <li>Fix typos in contracts, reports, and school assignments.</li>
+        <li>Reuse content from manuals or training materials in your own notes.</li>
+        <li>Start from a PDF template and adjust the wording in Word or Google Docs.</li>
+      </ul>
+      <p style="margin:0;">
+        Converted DOCX files have no added watermarks and are ready to share or print.
+      </p>
+    </section>
+
+    <section class="content-section" style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">How PDF → Word conversion works</h2>
+      <ol style="padding-left:18px;margin:0 0 10px;">
+        <li>Upload a PDF from your computer, phone, or tablet.</li>
+        <li>Click <strong>Convert PDF to DOCX</strong> to start the conversion.</li>
+        <li>GhostConvert processes the document and builds a Word compatible file.</li>
+        <li>Download your DOCX and open it in Word, Google Docs, or another editor.</li>
+      </ol>
+      <p style="margin:0 0 10px;">
+        For simple documents and text heavy PDFs, the output will be very close to the
+        original. Complex layouts with many columns or graphics may need light cleanup
+        after conversion.
+      </p>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">Best practices for cleaner conversions</h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Use the highest quality PDF you have, ideally exported from a document editor.</li>
+        <li>For scanned PDFs, results depend on how legible the original scan is.</li>
+        <li>After converting, save a copy of the DOCX under a new name before heavy edits.</li>
+      </ul>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">Frequently asked questions</h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Will the layout be perfect?</h3>
+      <p style="margin:0 0 8px;">
+        Most standard documents convert very well, but complex designs with columns,
+        tables, or unusual fonts may need some manual cleanup in Word or Google Docs.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Are my files stored?</h3>
+      <p style="margin:0;">
+        Files are stored only long enough to perform the conversion and provide your
+        download link. They are deleted automatically after a short period as described
+        in the <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>
+        Files are processed securely and deleted automatically after a short period.
+        GhostConvert is a fast, no login toolset designed to stay simple and useful.
+      </div>
+      <div style="margin-top: 0.35rem;">
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;.&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;.&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      handleToolPage({
+        tool: "pdf:pdf-to-word"
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!-- /tools/wav-to-mp3.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WAV to MP3 Converter | GhostConvert</title>
+  <meta name="description" content="Convert WAV to MP3 online for free. Perfect for shrinking large audio files for sharing, streaming, and everyday listening." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://ghostconvert.dev/tools/wav-to-mp3.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623"
+     crossorigin="anonymous"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="WAV to MP3 Converter - GhostConvert" />
+  <meta property="og:description" content="Free online WAV to MP3 converter. Make large recordings smaller and easier to share." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/tools/wav-to-mp3.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WAV to MP3 Converter - GhostConvert" />
+  <meta name="twitter:description" content="Turn uncompressed WAV audio into smaller MP3 files in seconds." />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-K2ZE1S86ZM");
+  </script>
+
+  <!-- GhostConvert Analytics Script -->
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- JSON-LD: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "WAV to MP3 Converter",
+    "url": "https://ghostconvert.dev/tools/wav-to-mp3.html",
+    "description": "Free WAV to MP3 online converter, ideal for shrinking large audio files for sharing.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "GhostConvert",
+      "url": "https://ghostconvert.dev/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why convert WAV to MP3?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WAV files are uncompressed and often very large. MP3 uses compression to make audio files much smaller, which is ideal for sharing, streaming, and saving storage space."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will converting WAV to MP3 reduce audio quality?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "MP3 is a lossy format, so some information is removed to reduce file size. For most listening and spoken word audio, the default quality is typically more than enough."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long are my files stored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Files are stored only long enough to complete the conversion and provide your download link, then deleted automatically after a short period as described in the Privacy Policy."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="tool-wrapper">
+
+    <header class="header">
+      <a href="/" class="logo">
+        GHOST<span>CONVERT</span>
+      </a>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>WAV to MP3</span>
+      </div>
+    </header>
+
+    <section class="tool-header">
+      <h1 class="tool-title">WAV to MP3 Converter</h1>
+      <p class="tool-subtitle">
+        Turn uncompressed WAV recordings into smaller MP3 files that are easier to store, send, and stream
+        without overcomplicating your workflow.
+      </p>
+    </section>
+
+    <!-- Optional ad slot -->
+    <div class="ad-slot ad-slot-tool-top"></div>
+
+    <section class="tool-card-main">
+      <div id="upload-area" class="upload-area">
+        <div class="upload-text">
+          <strong>Drop a WAV file here</strong><br />
+          or click to browse from your device.
+        </div>
+        <div id="file-name" class="file-name"></div>
+        <input id="file-input" type="file" accept=".wav,audio/wav,audio/x-wav" style="display:none" />
+      </div>
+
+      <div class="tool-actions">
+        <button id="convert-btn" class="btn btn-primary">
+          Convert to MP3
+        </button>
+        <span id="status-text" class="status-text">Select or drop a WAV file to begin.</span>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <!-- Optional lower ad slot -->
+      <div class="ad-slot ad-slot-tool-bottom"></div>
+    </section>
+
+    <!-- EXPLANATORY CONTENT -->
+    <section class="content-section" style="margin-top:28px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Why convert WAV to MP3?</h2>
+      <p style="margin:0 0 10px;">
+        WAV files are large because they store uncompressed audio. MP3 uses smart compression to make files much smaller
+        while staying good enough for everyday listening, podcasts, and quick sharing.
+      </p>
+      <p style="margin:0 0 10px;">
+        Converting WAV to MP3 with GhostConvert is useful when you:
+      </p>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Export recordings or voice notes to send by email or messaging apps.</li>
+        <li>Prepare podcast episodes, talks, or sermons for streaming and download.</li>
+        <li>Need to free up storage space while keeping audio easily playable.</li>
+      </ul>
+      <p style="margin:0;">
+        The output MP3 files are ready for phones, browsers, media players, and most modern apps without extra setup.
+      </p>
+    </section>
+
+    <section class="content-section" style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">How WAV → MP3 conversion works</h2>
+      <ol style="padding-left:18px;margin:0 0 10px;">
+        <li>Upload a WAV file from your device.</li>
+        <li>GhostConvert decodes the uncompressed audio and re-encodes it as a high quality MP3 using a modern encoder.</li>
+        <li>Bitrate and quality are tuned for a good balance between size and clarity.</li>
+        <li>You download a smaller MP3 that’s easy to store and share.</li>
+      </ol>
+      <p style="margin:0 0 10px;">
+        This tool is ideal when you already have a clean WAV recording and just need a more portable version.
+      </p>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">Frequently asked questions</h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Will converting to MP3 lower quality?</h3>
+      <p style="margin:0 0 8px;">
+        MP3 is a lossy format, so it uses compression to shrink file size.
+        For most spoken word and casual listening, the default quality is more than enough.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Can I convert long recordings?</h3>
+      <p style="margin:0 0 8px;">
+        Yes, as long as the file size fits within your browser and connection limits.
+        Longer WAV recordings benefit the most from MP3’s size savings.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">How long are my files stored?</h3>
+      <p style="margin:0;">
+        Files are kept only long enough to complete the conversion and provide your download link.
+        They are deleted automatically after a short period as described in the
+        <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>
+        Files are processed securely and deleted automatically after a short period.
+        GhostConvert is a fast, no login toolset designed to stay simple and useful.
+      </div>
+      <div style="margin-top: 0.35rem;">
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;.&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;.&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      handleToolPage({
+        tool: "audio:wav-to-mp3"
+      });
+    });
+  </script>
+</body>
+</html>

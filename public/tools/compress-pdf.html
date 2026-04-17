@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Compress PDF Online | GhostConvert</title>
+  <meta
+    name="description"
+    content="Compress PDF files online for free. Reduce PDF size for email, uploads, and online forms while keeping documents readable and clear."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://ghostconvert.dev/tools/compress-pdf.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+
+  <!-- Google AdSense -->
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-K2ZE1S86ZM");
+  </script>
+
+  <!-- GhostConvert Analytics Script -->
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Compress PDF Online - GhostConvert" />
+  <meta
+    property="og:description"
+    content="Free online PDF compressor. Shrink PDF files for email, uploads, and online forms while keeping text readable."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/tools/compress-pdf.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Compress PDF Online - GhostConvert" />
+  <meta
+    name="twitter:description"
+    content="Reduce PDF file size instantly for email, uploads, and online forms while keeping documents clear."
+  />
+
+  <!-- JSON-LD: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Compress PDF Online",
+    "url": "https://ghostconvert.dev/tools/compress-pdf.html",
+    "description": "Free online PDF compressor that reduces file size for email, uploads, and online forms while keeping documents readable.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "GhostConvert",
+      "url": "https://ghostconvert.dev/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage for Compress PDF tool -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does the Compress PDF tool do?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Compress PDF tool on GhostConvert reduces the file size of your PDF so it is easier to send by email, upload to websites, and attach to online forms. It optimizes images and internal structure while keeping the document readable."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will compressing a PDF reduce quality?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Some compression is applied to images inside the PDF to shrink the file size. This may slightly reduce image quality on heavy zoom, but the text and layout remain clear for normal reading, printing, and sharing."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I still search and copy text after compression?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. When your original PDF contains live text, the compressed PDF keeps that text searchable and selectable. The tool focuses on optimizing embedded images and file structure instead of flattening everything into a single image."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are my PDF files stored permanently?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Uploaded PDFs are stored only long enough to perform compression and provide your download link. They are automatically removed after a short period as described in the GhostConvert privacy policy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much can a PDF be compressed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The amount of compression depends on the content. Scanned PDFs and image-heavy documents often shrink the most, sometimes by 30–70%. Text-only PDFs may only get a small reduction because they are already compact."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <main class="tool-wrapper">
+    <!-- Header -->
+    <header class="header">
+      <a href="/" class="logo">GHOST<span>CONVERT</span></a>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Compress PDF</span>
+      </div>
+    </header>
+
+    <!-- Tool Header -->
+    <section class="tool-header">
+      <h1 class="tool-title">Compress PDF</h1>
+      <p class="tool-subtitle">
+        Reduce PDF file size for faster uploads and smaller email attachments while keeping your document readable.
+      </p>
+    </section>
+
+    <!-- Optional ad slot (top) -->
+    <div class="ad-slot ad-slot-tool-top"></div>
+
+    <!-- Tool Main -->
+    <section class="tool-card-main">
+      <div id="upload-area" class="upload-area">
+        <div class="upload-text">
+          <strong>Drop a PDF file here</strong><br />
+          or click to choose one from your device.
+        </div>
+        <div id="file-name" class="file-name"></div>
+        <input
+          id="file-input"
+          type="file"
+          accept=".pdf,application/pdf"
+          style="display:none"
+        />
+      </div>
+
+      <div class="tool-actions">
+        <button id="convert-btn" class="btn btn-primary">Compress PDF</button>
+        <span id="status-text" class="status-text">Select or drop a PDF to begin.</span>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <!-- Optional ad slot (bottom) -->
+      <div class="ad-slot ad-slot-tool-bottom"></div>
+    </section>
+
+    <!-- Explanatory SEO Content -->
+    <section
+      class="content-section"
+      style="margin-top:28px;font-size:0.9rem;line-height:1.7;color:#9ca3af;"
+    >
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        How the PDF compressor works
+      </h2>
+      <p style="margin:0 0 10px;">
+        The Compress PDF tool uses well known PDF utilities behind the scenes (such as Ghostscript)
+        to shrink your file size. When you upload a document, GhostConvert analyzes images,
+        fonts, and internal structure, and then applies smart compression settings designed for
+        everyday use.
+      </p>
+      <p style="margin:0 0 10px;">
+        Image heavy PDFs and scanned documents usually see the biggest reduction in file size,
+        because images are recompressed and unnecessary data is removed. Text and vector graphics
+        remain clear, and the original page order and layout are preserved so your document
+        still looks familiar after compression.
+      </p>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">
+        When should you compress a PDF?
+      </h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Before emailing a large report, invoice, or proposal to a client.</li>
+        <li>When a website or online form rejects your PDF because it is too large.</li>
+        <li>When you need to upload many PDFs over a slow connection or mobile data.</li>
+        <li>To reduce storage usage for archived scanned documents.</li>
+        <li>Any time you want documents to open faster on phones and older laptops.</li>
+      </ul>
+      <p style="margin:0 0 10px;">
+        Compressing your PDFs regularly keeps clutter under control and makes sharing smoother
+        for both you and the people receiving your files.
+      </p>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">
+        What stays the same after compression?
+      </h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>The number of pages and their order.</li>
+        <li>Text content, basic layout, and reading flow.</li>
+        <li>Searchable text in documents that were already searchable.</li>
+        <li>Most colors and graphics, with lighter file sizes for embedded images.</li>
+      </ul>
+      <p style="margin:0;">
+        The goal is to keep your document usable and professional while trimming the fat that
+        makes PDFs slow to send and open.
+      </p>
+    </section>
+
+    <!-- FAQ Content -->
+    <section
+      class="content-section"
+      style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;"
+    >
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        Frequently asked questions
+      </h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Does compressing a PDF change how it looks?
+      </h3>
+      <p style="margin:0 0 8px;">
+        For most documents, the layout stays the same and text remains clear. Some embedded
+        images may be compressed more aggressively, which can slightly reduce quality if you
+        zoom in very far, but this is usually not noticeable in normal reading.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Will this tool make my scanned PDF smaller?
+      </h3>
+      <p style="margin:0 0 8px;">
+        Yes. Scanned PDFs are often just large images wrapped in a PDF container, so they can
+        shrink significantly when optimized. This makes them much easier to email and upload.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Is there a file size limit?
+      </h3>
+      <p style="margin:0 0 8px;">
+        GhostConvert is designed around typical everyday documents such as reports, invoices,
+        and scan bundles. If you try to upload an extremely large PDF and run into limits,
+        you can split the file into smaller parts first and then compress each piece.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        How are my files handled?
+      </h3>
+      <p style="margin:0;">
+        Uploaded PDFs are used only to create the compressed output file. They are stored
+        temporarily while processing and automatically deleted after a short period, as
+        described in the <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        Files are processed securely and deleted automatically after a short period.
+        GhostConvert is a lightweight, fast, no-login toolset for real users.
+      </div>
+      <div style="margin-top: 0.35rem;">
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;.&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;.&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      handleToolPage({
+        tool: "pdf:compress-pdf"
+      });
+    });
+  </script>
+</body>
+</html>

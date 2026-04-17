@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PNG to JPG Converter | GhostConvert</title>
+  <meta
+    name="description"
+    content="Convert PNG to JPG online for free. Compress transparent PNGs into lightweight JPGs ideal for web, thumbnails, and previews."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://ghostconvert.dev/tools/png-to-jpg.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+
+  <!-- Google AdSense -->
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="PNG to JPG Converter - GhostConvert" />
+  <meta
+    property="og:description"
+    content="Free online PNG to JPG converter. Optimize images for web, thumbnails, and previews."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/tools/png-to-jpg.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PNG to JPG Converter - GhostConvert" />
+  <meta
+    name="twitter:description"
+    content="Turn PNG images into compressed JPGs ideal for web and thumbnails."
+  />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-K2ZE1S86ZM");
+  </script>
+
+  <!-- GhostConvert Analytics Script -->
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- JSON-LD: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "PNG to JPG Converter",
+    "url": "https://ghostconvert.dev/tools/png-to-jpg.html",
+    "description": "Free online PNG to JPG converter for web and thumbnail optimization.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "GhostConvert",
+      "url": "https://ghostconvert.dev/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ for PNG → JPG converter -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When should I convert PNG to JPG?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Convert PNG to JPG when you are working with photos, thumbnails or previews where a small file size matters more than perfect sharpness. JPG is widely supported and usually smaller than PNG."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will converting PNG to JPG reduce image quality?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JPG uses lossy compression, so some detail is removed to keep the file small. For most photos and social media images this is fine, but for pixel-perfect UI elements or logos you may want to keep the original PNG as a master copy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the PNG to JPG converter on GhostConvert free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The PNG to JPG converter on GhostConvert is free for everyday use. You do not need an account and your files are deleted automatically after a short period."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="tool-wrapper">
+    <header class="header">
+      <a href="/" class="logo">
+        GHOST<span>CONVERT</span>
+      </a>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>PNG to JPG</span>
+      </div>
+    </header>
+
+    <section class="tool-header">
+      <h1 class="tool-title">PNG to JPG Converter</h1>
+      <p class="tool-subtitle">
+        Turn transparent PNGs into compressed JPGs ideal for web, thumbnails, and previews.
+      </p>
+    </section>
+
+    <!-- Optional ad slot -->
+    <div class="ad-slot ad-slot-tool-top"></div>
+
+    <section class="tool-card-main">
+      <div id="upload-area" class="upload-area">
+        <div class="upload-text">
+          <strong>Drop a PNG file here</strong><br />
+          or click to browse from your device.
+        </div>
+        <div id="file-name" class="file-name"></div>
+        <input
+          id="file-input"
+          type="file"
+          accept=".png,image/png"
+          style="display:none"
+        />
+      </div>
+
+      <div class="tool-actions">
+        <button id="convert-btn" class="btn btn-primary">
+          Convert to JPG
+        </button>
+        <span id="status-text" class="status-text">
+          Select or drop a file to get started.
+        </span>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <!-- Optional lower ad slot -->
+      <div class="ad-slot ad-slot-tool-bottom"></div>
+    </section>
+
+    <!-- EXPLANATORY SEO CONTENT -->
+    <section class="content-section" style="margin-top:28px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        Why convert PNG to JPG?
+      </h2>
+      <p style="margin:0 0 10px;">
+        PNG files are perfect for transparency and high quality graphics, but they often result in
+        large file sizes. JPG is much smaller, making it ideal for thumbnails, social media,
+        and websites that need fast loading speeds.
+      </p>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Reduce image size for faster page loading</li>
+        <li>Create lightweight thumbnails and previews</li>
+        <li>Optimize images for ecommerce and listings</li>
+        <li>Remove transparency for better compatibility</li>
+      </ul>
+    </section>
+
+    <section class="content-section" style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        How PNG → JPG conversion works
+      </h2>
+      <ol style="padding-left:18px;margin:0 0 10px;">
+        <li>You upload a PNG file (transparent or solid).</li>
+        <li>GhostConvert processes and compresses it.</li>
+        <li>The image is saved as a JPG with optimized quality.</li>
+        <li>You download a lightweight JPG ready for web use.</li>
+      </ol>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">
+        Best uses for JPG images
+      </h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Product photos</li>
+        <li>Portfolio previews</li>
+        <li>Social media graphics</li>
+        <li>Email attachments</li>
+      </ul>
+    </section>
+
+    <section class="content-section" style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        Frequently asked questions
+      </h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        What happens to the transparent areas?
+      </h3>
+      <p style="margin:0 0 8px;">
+        JPG does not support transparency, so transparent sections become solid white by default.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Will the image lose quality?
+      </h3>
+      <p style="margin:0 0 8px;">
+        JPG is a compressed format, so some compression is added but GhostConvert uses balanced settings
+        to keep images sharp while minimizing file size.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Do you delete my files?
+      </h3>
+      <p style="margin:0;">
+        Yes. Files are automatically removed shortly after processing, as explained in the
+        <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>
+        Files are processed securely and automatically deleted after a short period.
+        GhostConvert is a fast, no login toolset designed to stay simple and useful.
+      </div>
+      <div style="margin-top: 0.35rem;">
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;.&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;.&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      handleToolPage({
+        tool: "image:png-to-jpg"
+      });
+    });
+  </script>
+</body>
+</html>

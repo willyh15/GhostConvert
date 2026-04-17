@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>WEBP to JPG Converter | GhostConvert</title>
+  <meta
+    name="description"
+    content="Convert WEBP images to JPG online for free. Make WEBP files compatible with older apps and devices."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://ghostconvert.dev/tools/webp-to-jpg.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+
+  <!-- AdSense -->
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-K2ZE1S86ZM");
+  </script>
+
+  <!-- GhostConvert Analytics Script -->
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="WEBP to JPG Converter - GhostConvert" />
+  <meta
+    property="og:description"
+    content="Free WEBP to JPG online converter. Perfect for making WEBP images usable everywhere."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/tools/webp-to-jpg.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WEBP to JPG Converter - GhostConvert" />
+  <meta
+    name="twitter:description"
+    content="Turn WEBP files into standard JPG images online."
+  />
+
+  <!-- JSON-LD: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "WEBP to JPG Converter",
+    "url": "https://ghostconvert.dev/tools/webp-to-jpg.html",
+    "description": "Convert WEBP images to widely compatible JPG format online.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "GhostConvert",
+      "url": "https://ghostconvert.dev/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why convert WEBP to JPG?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "WEBP is great for the modern web, but many older editors, apps, and devices still only support JPG. Converting WEBP to JPG makes your image usable nearly everywhere."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Will the JPG be larger than the WEBP?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Often, yes. WEBP is usually more efficient than JPG. The goal of this tool is compatibility rather than maximum compression."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to transparency when converting WEBP to JPG?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JPG does not support transparency. Any transparent areas in your WEBP will be rendered onto a solid background (commonly white) in the converted JPG."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you keep my images after conversion?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Files are processed securely and automatically deleted after a short period, as described in the Privacy Policy."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="tool-wrapper">
+    <header class="header">
+      <a href="/" class="logo">GHOST<span>CONVERT</span></a>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>WEBP to JPG</span>
+      </div>
+    </header>
+
+    <section class="tool-header">
+      <h1 class="tool-title">WEBP to JPG Converter</h1>
+      <p class="tool-subtitle">
+        Turn WEBP images into standard JPG files that work with all apps, editors, and devices.
+      </p>
+    </section>
+
+    <div class="ad-slot ad-slot-tool-top"></div>
+
+    <section class="tool-card-main">
+      <div id="upload-area" class="upload-area">
+        <div class="upload-text">
+          <strong>Drop a WEBP file here</strong><br />
+          or click to browse from your device.
+        </div>
+        <div id="file-name" class="file-name"></div>
+        <input
+          id="file-input"
+          type="file"
+          accept=".webp,image/webp"
+          style="display:none"
+        />
+      </div>
+
+      <div class="tool-actions">
+        <button id="convert-btn" class="btn btn-primary">
+          Convert to JPG
+        </button>
+        <span id="status-text" class="status-text">
+          Select or drop a WEBP to get started.
+        </span>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <div class="ad-slot ad-slot-tool-bottom"></div>
+    </section>
+
+    <!-- Explanatory SEO content -->
+    <section class="content-section" style="margin-top:28px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        Why convert WEBP to JPG?
+      </h2>
+      <p style="margin:0 0 10px;">
+        WEBP is great for the modern web, but many older editors, apps, and devices still only understand JPG.
+        Converting WEBP to JPG lets you reuse downloaded images in places that don’t yet support newer formats.
+      </p>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Open WEBP images in legacy photo editors</li>
+        <li>Upload images to older CMSs, forums, or marketplace tools</li>
+        <li>Share images with people using older phones and computers</li>
+        <li>Export screenshots or graphics in a format any app can read</li>
+      </ul>
+    </section>
+
+    <section class="content-section" style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        How WEBP → JPG conversion works
+      </h2>
+      <ol style="padding-left:18px;margin:0 0 10px;">
+        <li>Upload a WEBP image from your device.</li>
+        <li>GhostConvert decodes the WEBP file and prepares it for export.</li>
+        <li>The image is re-encoded as a JPG with web friendly quality settings.</li>
+        <li>You download a standard JPG that opens almost anywhere.</li>
+      </ol>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">
+        Common uses for WEBP to JPG
+      </h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Saving images from modern websites to edit in classic software</li>
+        <li>Uploading listing photos to marketplaces that don’t accept WEBP</li>
+        <li>Sending images via tools that only allow JPG attachments</li>
+        <li>Quickly converting browser downloads into a universal format</li>
+      </ul>
+    </section>
+
+    <section class="content-section" style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        Frequently asked questions
+      </h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Will the JPG be larger than the WEBP?
+      </h3>
+      <p style="margin:0 0 8px;">
+        In many cases, yes — WEBP is usually more efficient than JPG. The goal here is compatibility:
+        JPG trades a bit of extra file size for support in older tools.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        What happens to transparency?
+      </h3>
+      <p style="margin:0 0 8px;">
+        JPG does not support transparency. Transparent areas in your WEBP image will be rendered against a solid
+        background (often white) in the converted JPG.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Do you keep my images?
+      </h3>
+      <p style="margin:0;">
+        No. Files are processed securely and automatically deleted after a short period, as described in the
+        <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>
+        Files are processed securely and automatically deleted after a short period.
+        GhostConvert is a fast, no login toolset designed to stay simple and useful.
+      </div>
+      <div style="margin-top:0.35rem;">
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;.&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;.&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      handleToolPage({
+        tool: "image:webp-to-jpg"
+      });
+    });
+  </script>
+</body>
+</html>

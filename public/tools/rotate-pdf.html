@@ -1,0 +1,262 @@
+<!-- /tools/rotate-pdf.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Rotate PDF Pages Online | GhostConvert</title>
+  <meta
+    name="description"
+    content="Rotate PDF pages online for free. Fix sideways scans and flipped pages by rotating left/right 90° or 180°. No signup, no watermarks."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://ghostconvert.dev/tools/rotate-pdf.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com">
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623"
+     crossorigin="anonymous"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rotate PDF Pages Online - GhostConvert" />
+  <meta
+    property="og:description"
+    content="Free online PDF rotator. Fix sideways scans and rotated pages in seconds. No signup, no watermarks."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/tools/rotate-pdf.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rotate PDF Pages Online - GhostConvert" />
+  <meta
+    name="twitter:description"
+    content="Rotate PDF pages left/right 90° or 180° to fix sideways scans. Free, fast, no login."
+  />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-K2ZE1S86ZM");
+  </script>
+
+  <!-- GhostConvert Analytics Script -->
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- JSON-LD: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Rotate PDF Pages Online",
+    "url": "https://ghostconvert.dev/tools/rotate-pdf.html",
+    "description": "Free online PDF rotator for fixing sideways scans by rotating pages 90° left/right or 180°.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "GhostConvert",
+      "url": "https://ghostconvert.dev/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage for Rotate PDF tool -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "When should I rotate a PDF?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rotate a PDF when pages are sideways or upside down, which is common with scanned documents, phone camera scans, and exported PDFs. Rotating makes pages readable and ready to print or share."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does rotating a PDF change the content?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Rotating only changes the page orientation (the view/rotation of the page). The text, images, and layout remain the same—just rotated."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I rotate only specific pages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. A rotate tool can apply rotation to all pages or selected pages. If you only need to fix a few pages, you can rotate just those pages and keep the rest unchanged."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the Rotate PDF tool on GhostConvert free and do I need an account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Rotate PDF on GhostConvert is free for everyday use and does not require an account. Upload a PDF, rotate pages, and download the result with no login and no watermark."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long are my PDF files stored?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Files are stored only long enough to rotate the PDF and provide your download link briefly. They are automatically deleted afterward as described in the Privacy Policy."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <main class="tool-wrapper">
+
+    <header class="header">
+      <a href="/" class="logo">
+        GHOST<span>CONVERT</span>
+      </a>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Rotate PDF</span>
+      </div>
+    </header>
+
+    <section class="tool-header">
+      <h1 class="tool-title">Rotate PDF Pages</h1>
+      <p class="tool-subtitle">
+        Fix sideways scans and flipped pages. Rotate your PDF 90° left, 90° right, or 180° and download a clean copy.
+      </p>
+    </section>
+
+    <!-- Optional ad slot -->
+    <div class="ad-slot ad-slot-tool-top"></div>
+
+    <section class="tool-card-main">
+      <div id="upload-area" class="upload-area">
+        <div class="upload-text">
+          <strong>Drop a PDF file here</strong><br />
+          or click to browse from your device.
+        </div>
+        <div id="file-name" class="file-name"></div>
+        <input id="file-input" type="file" accept=".pdf,application/pdf" style="display:none" />
+      </div>
+
+      <div class="tool-actions">
+        <button id="convert-btn" class="btn btn-primary">
+          Rotate PDF
+        </button>
+        <span id="status-text" class="status-text">Select or drop a PDF to begin.</span>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <!-- Optional lower ad slot -->
+      <div class="ad-slot ad-slot-tool-bottom"></div>
+    </section>
+
+    <!-- EXPLANATORY CONTENT -->
+    <section class="content-section" style="margin-top:28px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Why rotate a PDF?</h2>
+      <p style="margin:0 0 10px;">
+        PDFs often come out sideways when they are scanned from a phone, exported from a printer, or created from photos.
+        Rotating your PDF fixes readability, makes printing easier, and keeps pages consistent for uploads, forms, and emails.
+      </p>
+      <p style="margin:0 0 10px;">
+        Rotating a PDF with GhostConvert is useful when you:
+      </p>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Need to fix sideways or upside down scanned pages.</li>
+        <li>Want a clean, readable PDF before sending it by email.</li>
+        <li>Prepare a document for printing without awkward page orientation.</li>
+        <li>Standardize a mixed scan where some pages are rotated differently.</li>
+      </ul>
+      <p style="margin:0;">
+        The output is a fresh PDF with corrected orientation ready to store, share, or upload anywhere.
+      </p>
+    </section>
+
+    <section class="content-section" style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">How PDF rotation works</h2>
+      <ol style="padding-left:18px;margin:0 0 10px;">
+        <li>Upload a PDF from your computer, phone, or tablet.</li>
+        <li>Choose the rotation direction (left, right, or 180°) and which pages to apply it to.</li>
+        <li>GhostConvert updates the page orientation and creates a new PDF copy.</li>
+        <li>Download the rotated PDF and use it like a normal document.</li>
+      </ol>
+      <p style="margin:0 0 10px;">
+        Rotating does not rewrite your text or images it only changes orientation so your pages display correctly.
+      </p>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">Tips for best results</h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>If only a few pages are wrong, rotate just those pages to keep the rest unchanged.</li>
+        <li>For phone scans, rotate first, then use Compress PDF if you want a smaller file.</li>
+        <li>If your PDF contains mixed orientations, rotate page by page for a clean final document.</li>
+      </ul>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">Frequently asked questions</h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Will rotating a PDF affect printing?</h3>
+      <p style="margin:0 0 8px;">
+        Rotating a PDF is specifically useful for printing because it makes pages appear in the correct orientation
+        before you hit print. This prevents sideways output and reduces wasted paper.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">Can I rotate scanned PDFs?</h3>
+      <p style="margin:0 0 8px;">
+        Yes. Scanned PDFs are one of the most common reasons people need rotation. Rotating fixes the page orientation
+        without altering the scan quality.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">How long are my files stored?</h3>
+      <p style="margin:0;">
+        Files are kept only long enough to complete the rotation and provide your download link briefly.
+        They are deleted automatically after a short period as described in the
+        <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <div>
+        Files are processed securely and deleted automatically after a short period.
+        GhostConvert is a fast, no login toolset designed to stay simple and useful.
+      </div>
+      <div style="margin-top: 0.35rem;">
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;.&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;.&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      handleToolPage({
+        tool: "pdf:rotate-pdf"
+      });
+    });
+  </script>
+</body>
+</html>

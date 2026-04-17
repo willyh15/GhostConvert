@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Delete PDF Pages Online | GhostConvert</title>
+  <meta
+    name="description"
+    content="Delete pages from a PDF file online for free. Remove unwanted pages like blanks, cover pages, and sensitive sections, then download a clean PDF."
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="canonical" href="https://ghostconvert.dev/tools/delete-pdf-pages.html" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+  <link rel="preconnect" href="https://googleads.g.doubleclick.net" />
+
+  <!-- AdSense -->
+  <script
+    async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623"
+    crossorigin="anonymous"
+  ></script>
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-K2ZE1S86ZM");
+  </script>
+
+  <!-- GhostConvert Analytics -->
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Delete PDF Pages Online - GhostConvert" />
+  <meta
+    property="og:description"
+    content="Free online PDF page remover. Upload a PDF, delete unwanted pages like blanks or sensitive sections, and download a clean document."
+  />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/tools/delete-pdf-pages.html" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Delete PDF Pages Online - GhostConvert" />
+  <meta
+    name="twitter:description"
+    content="Remove specific pages from a PDF and save a clean document with only the pages you need."
+  />
+
+  <!-- JSON-LD: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Delete PDF Pages Online",
+    "url": "https://ghostconvert.dev/tools/delete-pdf-pages.html",
+    "description": "Free online tool to delete pages from PDF files. Remove blank pages, cover pages, and unwanted sections, then download a clean PDF.",
+    "applicationCategory": "UtilityApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "GhostConvert",
+      "url": "https://ghostconvert.dev/"
+    },
+    "inLanguage": "en"
+  }
+  </script>
+
+  <!-- JSON-LD: FAQPage for Delete PDF Pages tool -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I delete pages from a PDF?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Upload your PDF, type the page numbers or ranges you want to remove, such as 1,3,7-10, and then click Delete PDF Pages. GhostConvert creates a new PDF without those pages so you can download a clean document."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I delete multiple page ranges at once?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. You can delete multiple pages and ranges in a single step using a comma-separated list. For example, 2,5-8,11 removes page 2, pages 5 through 8, and page 11 from your PDF."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does deleting PDF pages change the remaining content?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. The Delete PDF Pages tool only removes the pages you choose. All remaining pages keep their original layout, images, and text. A new PDF is created with the pages you decided to keep."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the Delete PDF Pages tool free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Deleting pages from a PDF with GhostConvert is free for everyday use. There is no login required and no watermark added to your document."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What happens to my PDF after I upload it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Your PDF is stored only long enough to remove the selected pages and generate your new file. GhostConvert automatically deletes uploaded and processed files after a short period, as explained in the Privacy Policy."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <main class="tool-wrapper">
+    <header class="header">
+      <a href="/" class="logo">GHOST<span>CONVERT</span></a>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Delete PDF Pages</span>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="tool-header">
+      <h1 class="tool-title">Delete Pages From a PDF</h1>
+      <p class="tool-subtitle">
+        Upload a PDF and remove specific pages instantly. Perfect for removing blank pages, resend
+        sections, or pages you don’t want to share.
+      </p>
+    </section>
+
+    <div class="ad-slot ad-slot-tool-top"></div>
+
+    <!-- Tool -->
+    <section class="tool-card-main">
+
+      <!-- Upload -->
+      <div id="upload-area" class="upload-area">
+        <div class="upload-text">
+          <strong>Drop a PDF file here</strong><br />
+          or click to browse from your device.
+        </div>
+        <div id="file-name" class="file-name"></div>
+        <input
+          id="file-input"
+          type="file"
+          accept=".pdf,application/pdf"
+          style="display:none"
+        />
+      </div>
+
+      <!-- Page selection -->
+      <div class="form-page-selector">
+        <label for="page-remove" class="page-remove-label">
+          Pages to remove (example: <em>1,3,7-10</em>)
+        </label>
+        <input
+          id="page-remove"
+          type="text"
+          placeholder="Enter page numbers or ranges"
+          class="page-remove-input"
+        />
+      </div>
+
+      <div class="tool-actions">
+        <button id="convert-btn" class="btn btn-primary">
+          Delete PDF Pages
+        </button>
+        <span id="status-text" class="status-text">
+          Select or drop a PDF to get started.
+        </span>
+      </div>
+
+      <div class="progress">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+
+      <div class="ad-slot ad-slot-tool-bottom"></div>
+    </section>
+
+    <!-- Content -->
+    <section
+      class="content-section"
+      style="margin-top:28px;font-size:0.9rem;line-height:1.7;color:#9ca3af;"
+    >
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        Why delete pages from a PDF?
+      </h2>
+      <p style="margin:0 0 10px;">
+        Many PDFs include pages that are unnecessary: blank backs, scanned covers, pages meant for
+        internal use, or personal information you don’t want to send. Removing pages makes the
+        document cleaner and smaller.
+      </p>
+
+      <p style="margin:0 0 10px;">Typical reasons to delete PDF pages:</p>
+
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Remove blank pages from a scan.</li>
+        <li>Delete title covers before sending a report.</li>
+        <li>Remove pages containing sensitive personal data.</li>
+        <li>Trim unnecessary appendix pages.</li>
+        <li>Shorten a document to meet upload limits.</li>
+      </ul>
+
+      <p style="margin:0;">
+        GhostConvert makes it easy: upload a file, type the pages to remove, and download the new PDF.
+      </p>
+    </section>
+
+    <section
+      class="content-section"
+      style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;"
+    >
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        How page deletion works
+      </h2>
+      <ol style="padding-left:18px;margin:0 0 10px;">
+        <li>You upload a PDF from your device.</li>
+        <li>Enter the pages you want removed using single numbers and ranges.</li>
+        <li>The selected pages are removed on the server.</li>
+        <li>You download a clean PDF without those pages.</li>
+      </ol>
+      <p style="margin:0 0 10px;">
+        The original file isn’t changed; a new PDF is created containing only the pages you want.
+      </p>
+
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:16px 0 8px;">
+        Best uses
+      </h2>
+      <ul style="padding-left:18px;margin:0 0 8px;">
+        <li>Submitting assignments without cover pages.</li>
+        <li>Sending only the signed pages of a contract.</li>
+        <li>Trimming a large document before sharing.</li>
+        <li>Cleaning scanned PDFs of irrelevant pages.</li>
+      </ul>
+    </section>
+
+    <section
+      class="content-section"
+      style="margin-top:24px;font-size:0.9rem;line-height:1.7;color:#9ca3af;"
+    >
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">
+        Frequently asked questions
+      </h2>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Does this change page content?
+      </h3>
+      <p style="margin:0 0 8px;">
+        No: GhostConvert only removes pages. The remaining pages stay exactly the same.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        Can I delete multiple ranges?
+      </h3>
+      <p style="margin:0 0 8px;">
+        Yes: you can use a combination of single pages and dash ranges like:
+        <code>2,5-8,11</code>.
+      </p>
+
+      <h3 style="font-size:0.95rem;color:#e5e7eb;margin:10px 0 4px;">
+        What happens to my file?
+      </h3>
+      <p style="margin:0;">
+        Files are stored only long enough to create the output file and are deleted shortly after
+        as described in the <a href="/privacy.html">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        Files are processed securely and automatically deleted after a short period.
+      </div>
+      <div style="margin-top: 0.35rem;">
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;.&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;.&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/assets/app.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // tool: pdf:delete-pages
+      // wire the page number input via extraPayloadFieldId (read by handleToolPage)
+      handleToolPage({
+        tool: "pdf:delete-pages",
+        extraPayloadFieldId: "page-remove"
+      });
+    });
+  </script>
+</body>
+</html>

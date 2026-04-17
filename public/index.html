@@ -1,0 +1,428 @@
+<!-- /var/www/file-converter/public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GhostConvert | Free Online File Converter (JPG, PNG, PDF, MP4)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description" content="GhostConvert is a fast, free online file converter. Convert PNG ↔ JPG, JPG ↔ PNG, SVG → PNG/JPG/WEBP, HEIC → JPG, WEBP ↔ JPG/PNG, JPG/PNG → PDF, PDF ↔ Word, Word/Excel → PDF, merge, split, unlock and delete PDF pages, MP4 ↔ MP3, MP3 ↔ WAV, M4A → MP3, GIF ↔ MP4/WEBP, ZIP tools and more. No login, no watermarks." />
+  <link rel="canonical" href="https://ghostconvert.dev/" />
+  <link rel="stylesheet" href="/assets/style.css" />
+
+  <!-- Favicons (safe even if you add later) -->
+  <link rel="icon" href="/assets/favicon.ico" />
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+
+  <!--AdSense script-->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1893531898786623" crossorigin="anonymous"></script>
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="GhostConvert · Free Online File Converter" />
+  <meta property="og:description" content="Fast, free online file conversion for images, SVG logos, video and documents." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ghostconvert.dev/" />
+  <meta property="og:site_name" content="GhostConvert" />
+
+  <!-- Optional: set if you add a share image later -->
+  <!-- <meta property="og:image" content="https://ghostconvert.dev/assets/og.png" /> -->
+  <!-- <meta name="twitter:image" content="https://ghostconvert.dev/assets/og.png" /> -->
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="GhostConvert · Free Online File Converter" />
+  <meta name="twitter:description" content="Convert PNG, JPG, SVG, HEIC, WEBP, MP4 and PDF files online." />
+
+  <!-- Performance: preconnect -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+  <link rel="preconnect" href="https://pagead2.googlesyndication.com" crossorigin />
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K2ZE1S86ZM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-K2ZE1S86ZM');
+  </script>
+
+  <script src="/assets/analytics.js" defer></script>
+
+  <!-- Schema: WebSite -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "GhostConvert",
+    "url": "https://ghostconvert.dev/",
+    "description": "Fast, free online file converter for images, SVG logos, audio, video, and documents.",
+    "inLanguage": "en",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://ghostconvert.dev/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Schema: WebApplication -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebApplication",
+    "name":"GhostConvert",
+    "url":"https://ghostconvert.dev/",
+    "applicationCategory":"UtilitiesApplication",
+    "operatingSystem":"All",
+    "offers":{
+      "@type":"Offer",
+      "price":"0",
+      "priceCurrency":"USD"
+    }
+  }
+  </script>
+
+  <!-- FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Is GhostConvert free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. GhostConvert is free for everyday file conversions. The site is supported by advertising so the tools can stay available without charging for basic use."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need to create an account?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No account is required. You can convert files and download the result without signing up."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are my files handled?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Files are used only to produce the output you requested, stored temporarily during processing, and cleaned up automatically after a short period (see the privacy policy)."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* Homepage-only polish (kept here so you don't have to touch style.css yet) */
+    .trust-row{
+      margin-top: 14px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+      justify-content:center;
+      align-items:center;
+    }
+    .trust-pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:7px 10px;
+      border-radius:999px;
+      background:rgba(2,6,23,.35);
+      border:1px solid rgba(148,163,184,.14);
+      color:#e5e7eb;
+      font-size:.85rem;
+      line-height:1;
+      user-select:none;
+      white-space:nowrap;
+    }
+    .trust-dot{
+      width:7px;height:7px;border-radius:999px;
+      background:rgba(99,102,241,.9);
+      box-shadow:0 0 0 3px rgba(99,102,241,.18);
+    }
+    .micro-note{
+      color:#9ca3af;
+      font-size:.9rem;
+      line-height:1.6;
+      text-align:center;
+      max-width:900px;
+      margin: 10px auto 0;
+    }
+    .tool-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+      margin-top: 14px;
+    }
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(15,23,42,.55);
+      border:1px solid rgba(148,163,184,.12);
+      color:#e5e7eb;
+      text-decoration:none;
+      font-weight:700;
+      font-size:.9rem;
+    }
+    .chip:hover{ filter:brightness(1.08); }
+    .chip small{
+      font-weight:600;
+      color:#9ca3af;
+      font-size:.85rem;
+    }
+    .home-search{
+      max-width: 840px;
+      margin: 18px auto 0;
+      display:flex;
+      gap:10px;
+      justify-content:center;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .home-search input{
+      width:min(520px, 92vw);
+      padding:12px 14px;
+      border-radius:14px;
+      background:rgba(2,6,23,.35);
+      border:1px solid rgba(148,163,184,.18);
+      color:#e5e7eb;
+      outline:none;
+    }
+    .home-search input::placeholder{ color:#9ca3af; }
+    .home-search button{
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid rgba(148,163,184,.18);
+      background:rgba(99,102,241,.9);
+      color:#fff;
+      font-weight:800;
+      cursor:pointer;
+    }
+    .home-search button:hover{ filter:brightness(1.06); }
+    .hide{ display:none !important; }
+  </style>
+</head>
+
+<body>
+  <main>
+    <header class="header">
+      <a href="/" class="logo">GHOST<span>CONVERT</span></a>
+
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/about.html">About</a>
+        <a href="/how-it-works.html">How it works</a>
+        <a href="/guides/index.html">Guides</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Fast · Free · No login</span>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h1 class="hero-title">Convert files in seconds, not minutes.</h1>
+
+      <p class="hero-subtitle">
+        GhostConvert is a fast, free toolbox for everyday files.
+        Convert images (PNG, JPG, HEIC, WEBP, SVG), work with PDFs (create, merge, split, delete pages, compress, rotate, protect, unlock, PDF ↔ Word),
+        extract audio (MP4 → MP3, M4A → MP3, MP3 ↔ WAV), and unpack ZIPs.
+        No registration. No watermarks. No hassle.
+      </p>
+
+      <!-- NEW: trust badges that improve AdSense reviewer confidence + user trust -->
+      <div class="trust-row" aria-label="Trust badges">
+        <span class="trust-pill"><span class="trust-dot"></span>No account</span>
+        <span class="trust-pill"><span class="trust-dot"></span>No watermark</span>
+        <span class="trust-pill"><span class="trust-dot"></span>Auto-cleanup</span>
+        <span class="trust-pill"><span class="trust-dot"></span>Everyday conversions</span>
+      </div>
+
+      <!-- NEW: "top 3" chips (focus = better CTR) -->
+      <div class="tool-row" aria-label="Top tools">
+        <a class="chip" href="/tools/png-to-jpg.html">PNG → JPG <small>Photos</small></a>
+        <a class="chip" href="/tools/heic-to-jpg.html">HEIC → JPG <small>iPhone</small></a>
+        <a class="chip" href="/tools/compress-pdf.html">Compress PDF <small>Email</small></a>
+      </div>
+
+      <div class="hero-actions">
+        <button id="hero-primary-btn" class="hero-btn-primary">Start with PNG → JPG</button>
+        <button class="hero-btn-secondary" onclick="document.getElementById('tools').scrollIntoView({behavior:'smooth'})">
+          Browse all tools
+        </button>
+      </div>
+
+      <!-- NEW: search/filter that instantly helps UX + makes homepage feel "alive" -->
+      <div class="home-search" role="search" aria-label="Find a tool">
+        <input id="toolSearch" type="search" placeholder="Search tools (ex: 'pdf', 'heic', 'mp3', 'svg')..." autocomplete="off" />
+        <button type="button" id="toolSearchBtn">Search</button>
+      </div>
+      <div class="micro-note">
+        Tip: Search by format (<em>png</em>, <em>pdf</em>, <em>mp3</em>) or action (<em>compress</em>, <em>merge</em>, <em>unlock</em>).
+      </div>
+
+      <div style="margin-top: 14px; display:flex; gap:10px; flex-wrap:wrap; justify-content:center;">
+        <a href="/guides/index.html" class="hero-btn-secondary" style="text-decoration:none;">Read the guides</a>
+        <span style="color:#9ca3af; font-size:0.9rem; line-height:1.6;">Step by step tips for cleaner conversions</span>
+      </div>
+    </section>
+
+    <section id="tools" class="tools-section">
+      <div class="tools-grid-title">
+        <h2 style="font-size: 1rem; margin: 0;">Popular converters</h2>
+        <span style="font-size: 0.8rem; color: #9ca3af;">Image, SVG, document, audio and PDF tools in one place</span>
+      </div>
+
+      <!-- Tools -->
+      <div style="margin-top: 1.25rem;">
+        <h3 style="font-size:0.9rem;margin:0 0 0.5rem;color:#e5e7eb;">Image converters</h3>
+        <div class="tools-grid">
+          <a data-tags="png jpg image photos thumbnails" href="/tools/png-to-jpg.html" class="tool-card"><div class="tool-name">PNG → JPG</div><div class="tool-meta">Optimize photos, thumbnails, previews</div></a>
+          <a data-tags="jpg png image logos graphics" href="/tools/jpg-to-png.html" class="tool-card"><div class="tool-name">JPG → PNG</div><div class="tool-meta">Great for graphics and logos</div></a>
+          <a data-tags="heic jpg iphone images photos" href="/tools/heic-to-jpg.html" class="tool-card"><div class="tool-name">HEIC → JPG</div><div class="tool-meta">Make iPhone photos shareable anywhere</div></a>
+          <a data-tags="webp jpg image convert" href="/tools/webp-to-jpg.html" class="tool-card"><div class="tool-name">WEBP → JPG</div><div class="tool-meta">Make WEBP images compatible with all apps</div></a>
+          <a data-tags="webp png image logo" href="/tools/webp-to-png.html" class="tool-card"><div class="tool-name">WEBP → PNG</div><div class="tool-meta">Convert WEBP to logo friendly PNG</div></a>
+          <a data-tags="png webp compress image" href="/tools/png-to-webp.html" class="tool-card"><div class="tool-name">PNG → WEBP</div><div class="tool-meta">Compress PNG images to modern WEBP</div></a>
+          <a data-tags="jpg webp compress image" href="/tools/jpg-to-webp.html" class="tool-card"><div class="tool-name">JPG → WEBP</div><div class="tool-meta">Make JPG photos smaller with WEBP</div></a>
+          <a data-tags="compress image jpg png shrink" href="/tools/compress-image.html" class="tool-card"><div class="tool-name">Compress Image</div><div class="tool-meta">Shrink JPG/PNG for web and email</div></a>
+          <a data-tags="pdf jpg image preview thumbnail" href="/tools/pdf-to-jpg.html" class="tool-card"><div class="tool-name">PDF → JPG</div><div class="tool-meta">Create previews and thumbnails from PDFs</div></a>
+          <a data-tags="svg png logo vector" href="/tools/svg-to-png.html" class="tool-card"><div class="tool-name">SVG → PNG</div><div class="tool-meta">Convert logos and graphics to universal PNG</div></a>
+          <a data-tags="svg jpg logo vector" href="/tools/svg-to-jpg.html" class="tool-card"><div class="tool-name">SVG → JPG</div><div class="tool-meta">Rasterize vector images to JPG</div></a>
+          <a data-tags="svg webp vector optimize" href="/tools/svg-to-webp.html" class="tool-card"><div class="tool-name">SVG → WEBP</div><div class="tool-meta">Optimize vector assets for web delivery</div></a>
+          <a data-tags="png svg vectorize trace" href="/tools/png-to-svg.html" class="tool-card"><div class="tool-name">PNG → SVG</div><div class="tool-meta">Vectorize with color + presets (logos, posters, photos)</div></a>
+          <a data-tags="jpg svg vectorize trace" href="/tools/jpg-to-svg.html" class="tool-card"><div class="tool-name">JPG → SVG</div><div class="tool-meta">Vectorize JPGs with presets (best for logos & artwork)</div></a>
+        </div>
+      </div>
+
+      <div style="margin-top: 1.75rem;">
+        <h3 style="font-size:0.9rem;margin:0 0 0.5rem;color:#e5e7eb;">PDF &amp; document tools</h3>
+        <div class="tools-grid">
+          <a data-tags="png pdf document" href="/tools/png-to-pdf.html" class="tool-card"><div class="tool-name">PNG → PDF</div><div class="tool-meta">Turn PNG images into clean PDFs</div></a>
+          <a data-tags="jpg pdf document" href="/tools/jpg-to-pdf.html" class="tool-card"><div class="tool-name">JPG → PDF</div><div class="tool-meta">Turn photos and scans into a single PDF</div></a>
+          <a data-tags="pdf word docx convert" href="/tools/pdf-to-word.html" class="tool-card"><div class="tool-name">PDF → Word</div><div class="tool-meta">Turn PDFs into editable DOCX files</div></a>
+          <a data-tags="word docx pdf convert" href="/tools/word-to-pdf.html" class="tool-card"><div class="tool-name">Word → PDF</div><div class="tool-meta">Turn DOCX into clean PDF files</div></a>
+          <a data-tags="excel xls xlsx pdf convert" href="/tools/excel-to-pdf.html" class="tool-card"><div class="tool-name">Excel → PDF</div><div class="tool-meta">Export tables and sheets to PDF</div></a>
+          <a data-tags="merge pdf combine" href="/tools/merge-pdf.html" class="tool-card"><div class="tool-name">Merge PDF</div><div class="tool-meta">Combine multiple PDFs into one file</div></a>
+          <a data-tags="split pdf extract pages" href="/tools/split-pdf.html" class="tool-card"><div class="tool-name">Split PDF</div><div class="tool-meta">Extract pages into a new PDF</div></a>
+          <a data-tags="delete pdf pages remove" href="/tools/delete-pdf-pages.html" class="tool-card"><div class="tool-name">Delete PDF Pages</div><div class="tool-meta">Remove unwanted pages from a PDF</div></a>
+          <a data-tags="compress pdf shrink email" href="/tools/compress-pdf.html" class="tool-card"><div class="tool-name">Compress PDF</div><div class="tool-meta">Shrink PDFs for email and uploads</div></a>
+          <a data-tags="rotate pdf fix sideways" href="/tools/rotate-pdf.html" class="tool-card"><div class="tool-name">Rotate PDF</div><div class="tool-meta">Fix sideways scans and pages</div></a>
+          <a data-tags="protect pdf password" href="/tools/protect-pdf.html" class="tool-card"><div class="tool-name">Protect PDF</div><div class="tool-meta">Add a password to your PDF</div></a>
+          <a data-tags="unlock pdf remove restrictions" href="/tools/unlock-pdf.html" class="tool-card"><div class="tool-name">Unlock PDF</div><div class="tool-meta">Remove owner restrictions from PDFs you own</div></a>
+        </div>
+      </div>
+
+      <div style="margin-top: 1.75rem;">
+        <h3 style="font-size:0.9rem;margin:0 0 0.5rem;color:#e5e7eb;">Audio &amp; video tools</h3>
+        <div class="tools-grid">
+          <a data-tags="mp4 mp3 audio extract" href="/tools/mp4-to-mp3.html" class="tool-card"><div class="tool-name">MP4 → MP3</div><div class="tool-meta">Extract audio from videos</div></a>
+          <a data-tags="mp3 wav audio convert" href="/tools/mp3-to-wav.html" class="tool-card"><div class="tool-name">MP3 → WAV</div><div class="tool-meta">Convert MP3 to uncompressed WAV</div></a>
+          <a data-tags="wav mp3 audio compress" href="/tools/wav-to-mp3.html" class="tool-card"><div class="tool-name">WAV → MP3</div><div class="tool-meta">Shrink WAV audio for sharing</div></a>
+          <a data-tags="m4a mp3 iphone audio" href="/tools/m4a-to-mp3.html" class="tool-card"><div class="tool-name">M4A → MP3</div><div class="tool-meta">Make iPhone audio compatible everywhere</div></a>
+          <a data-tags="gif mp4 video convert" href="/tools/gif-to-mp4.html" class="tool-card"><div class="tool-name">GIF → MP4</div><div class="tool-meta">Turn GIFs into smooth video</div></a>
+          <a data-tags="mov mp4 video convert" href="/tools/mov-to-mp4.html" class="tool-card"><div class="tool-name">MOV → MP4</div><div class="tool-meta">Make MOV videos web friendly MP4</div></a>
+        </div>
+      </div>
+
+      <div style="margin-top: 1.75rem;">
+        <h3 style="font-size:0.9rem;margin:0 0 0.5rem;color:#e5e7eb;">Archive &amp; other tools</h3>
+        <div class="tools-grid">
+          <a data-tags="zip extract unzip archive" href="/tools/zip-extract.html" class="tool-card"><div class="tool-name">ZIP → Extract</div><div class="tool-meta">Unpack ZIP archives into files</div></a>
+        </div>
+      </div>
+
+      <!-- NEW: empty state when filtering -->
+      <div id="noTools" class="hide" style="margin-top:14px;color:#9ca3af;text-align:center;">
+        No tools match that search. Try “pdf”, “heic”, “mp3”, “compress”, or “svg”.
+      </div>
+    </section>
+
+    <section class="content-section" style="margin-top:28px;font-size:0.95rem;line-height:1.75;color:#9ca3af;">
+      <h2 style="font-size:1.05rem;color:#f9fafb;margin:0 0 8px;">Start here</h2>
+      <ul style="padding-left:18px;margin:0;">
+        <li><a href="/how-it-works.html">How GhostConvert works</a> (upload → convert → auto-cleanup)</li>
+        <li><a href="/guides/index.html">Guides</a> (tips for cleaner results)</li>
+        <li><a href="/about.html">About GhostConvert</a> (who runs it, what it supports, how files are handled)</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <div>Files are processed securely and automatically deleted after a short period.</div>
+      <div style="margin-top: 0.35rem;">
+        <a href="/about.html">About</a>
+        &nbsp;·&nbsp;
+        <a href="/how-it-works.html">How it works</a>
+        &nbsp;·&nbsp;
+        <a href="/guides/index.html">Guides</a>
+        &nbsp;·&nbsp;
+        <a href="/privacy.html">Privacy</a>
+        &nbsp;·&nbsp;
+        <a href="/terms.html">Terms</a>
+        &nbsp;·&nbsp;
+        <a href="/contact.html">Contact</a>
+      </div>
+    </footer>
+  </main>
+
+  <script src="/assets/app.js"></script>
+
+  <!-- Homepage-only tool search/filter -->
+  <script>
+    (function(){
+      const input = document.getElementById('toolSearch');
+      const btn = document.getElementById('toolSearchBtn');
+      const cards = Array.from(document.querySelectorAll('.tool-card'));
+      const noTools = document.getElementById('noTools');
+
+      function normalize(s){ return (s || '').toLowerCase().trim(); }
+
+      function applyFilter(){
+        const q = normalize(input.value);
+        let visible = 0;
+
+        for (const card of cards) {
+          const hay = normalize(
+            card.getAttribute('data-tags') + ' ' +
+            card.textContent
+          );
+          const match = q === '' || hay.includes(q);
+          card.classList.toggle('hide', !match);
+          if (match) visible++;
+        }
+
+        if (noTools) noTools.classList.toggle('hide', visible !== 0);
+        // If user searched, keep them in the tools section
+        if (q) document.getElementById('tools')?.scrollIntoView({behavior:'smooth'});
+      }
+
+      input?.addEventListener('input', applyFilter);
+      btn?.addEventListener('click', applyFilter);
+      input?.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') applyFilter();
+      });
+
+      // Wire hero primary button
+      const primary = document.getElementById('hero-primary-btn');
+      primary?.addEventListener('click', () => {
+        window.location.href = '/tools/png-to-jpg.html';
+      });
+
+      // If you ever pass ?q=pdf, auto-search
+      const params = new URLSearchParams(window.location.search);
+      const q = params.get('q');
+      if (q && input) {
+        input.value = q;
+        applyFilter();
+      }
+    })();
+  </script>
+</body>
+</html>

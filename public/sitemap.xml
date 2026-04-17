@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Core -->
+  <url><loc>https://ghostconvert.dev/</loc></url>
+  <url><loc>https://ghostconvert.dev/about.html</loc></url>
+  <url><loc>https://ghostconvert.dev/how-it-works.html</loc></url>
+
+  <!-- Legal -->
+  <url><loc>https://ghostconvert.dev/privacy.html</loc></url>
+  <url><loc>https://ghostconvert.dev/terms.html</loc></url>
+  <url><loc>https://ghostconvert.dev/contact.html</loc></url>
+
+  <!-- Guides index -->
+  <url><loc>https://ghostconvert.dev/guides/index.html</loc></url>
+
+  <!-- Guides (add ALL the ones you actually have live) -->
+  <url><loc>https://ghostconvert.dev/guides/png-to-svg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/jpg-to-svg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/compress-image.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/heic-to-jpg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/jpg-to-webp.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/png-to-jpg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/png-to-webp.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/png-to-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/svg-to-png.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/svg-to-jpg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/svg-to-webp.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/webp-to-jpg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/webp-to-png.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/compress-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/jpg-to-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/merge-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/split-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/rotate-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/delete-pdf-pages.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/protect-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/unlock-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/pdf-to-jpg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/word-to-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/pdf-to-word.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/excel-to-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/zip-extract.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/gif-to-mp4.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/gif-to-webp.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/mov-to-mp4.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/mp4-to-mp3.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/m4a-to-mp3.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/wav-to-mp3.html</loc></url>
+  <url><loc>https://ghostconvert.dev/guides/mp3-to-wav.html</loc></url>
+
+  <!-- Image tools -->
+  <url><loc>https://ghostconvert.dev/tools/png-to-jpg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/jpg-to-png.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/heic-to-jpg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/webp-to-jpg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/webp-to-png.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/compress-image.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/png-to-webp.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/jpg-to-webp.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/pdf-to-jpg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/png-to-pdf.html</loc></url>
+
+  <!-- Vector / SVG tools -->
+  <url><loc>https://ghostconvert.dev/tools/png-to-svg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/jpg-to-svg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/svg-to-png.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/svg-to-jpg.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/svg-to-webp.html</loc></url>
+
+  <!-- PDF / document tools -->
+  <url><loc>https://ghostconvert.dev/tools/pdf-to-word.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/word-to-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/excel-to-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/compress-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/jpg-to-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/merge-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/split-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/rotate-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/protect-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/unlock-pdf.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/delete-pdf-pages.html</loc></url>
+
+  <!-- Audio tools -->
+  <url><loc>https://ghostconvert.dev/tools/mp4-to-mp3.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/mp3-to-wav.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/wav-to-mp3.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/m4a-to-mp3.html</loc></url>
+
+  <!-- Video tools -->
+  <url><loc>https://ghostconvert.dev/tools/gif-to-mp4.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/mov-to-mp4.html</loc></url>
+  <url><loc>https://ghostconvert.dev/tools/gif-to-webp.html</loc></url>
+
+  <!-- Archive tools -->
+  <url><loc>https://ghostconvert.dev/tools/zip-extract.html</loc></url>
+</urlset>
